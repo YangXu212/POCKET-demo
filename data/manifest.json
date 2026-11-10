@@ -136,11 +136,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain -0.04 dB.",
-      "source": "Linear synthetic",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the [0.000, 9.984) s interval, before the common playback gain."
-      }
+      "source": "Linear synthetic"
     },
     {
       "id": "synth-000386",
@@ -232,11 +228,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 6.64 dB.",
-      "source": "Linear synthetic",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the [0.000, 9.984) s interval, before the common playback gain."
-      }
+      "source": "Linear synthetic"
     },
     {
       "id": "blind-01-dt",
@@ -320,14 +312,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [26.940, 38.880) s; common playback gain 8.90 dB.",
-      "source": "ICASSP 2023 AEC Challenge blind real-world test recordings.",
-      "provenance": {
-        "Metric interval": "AECMOS evaluated on [26.940, 38.880) s, before the common playback gain.",
-        "Original sample ID": "INuwzS29ZEq2XiBD4OzWoQ_doubletalk-with-movement",
-        "Reference alignment": "Shared GCC-PHAT estimate from the first 10 s: 15.625 ms. Original loopback supplied to AECMOS.",
-        "Inference context": "Full recording processed before extracting the excerpt."
-      }
+      "source": "ICASSP 2023 AEC Challenge blind real-world test recordings."
     },
     {
       "id": "synth-000363",
@@ -433,11 +418,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 14.87 dB.",
-      "source": "Linear synthetic",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the [0.000, 9.984) s interval, before the common playback gain."
-      }
+      "source": "Linear synthetic"
     },
     {
       "id": "car-0174-dt-clean",
@@ -546,12 +527,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 13.14 dB.",
-      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise.",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
-        "Original sample ID": "weilai_test_00043"
-      }
+      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise."
     },
     {
       "id": "blind-02-dt",
@@ -635,14 +611,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [26.988, 38.976) s; common playback gain 3.81 dB.",
-      "source": "ICASSP 2023 AEC Challenge blind real-world test recordings.",
-      "provenance": {
-        "Metric interval": "AECMOS evaluated on [26.988, 38.976) s, before the common playback gain.",
-        "Original sample ID": "7a7e17f5-1e38-4e02-aa4c-bd53dfaef154_doubletalk-with-movement",
-        "Reference alignment": "Shared GCC-PHAT estimate from the first 10 s: 73.875 ms. Original loopback supplied to AECMOS.",
-        "Inference context": "Full recording processed before extracting the excerpt."
-      }
+      "source": "ICASSP 2023 AEC Challenge blind real-world test recordings."
     },
     {
       "id": "blind-04-dt",
@@ -726,14 +695,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [26.940, 38.880) s; common playback gain -0.53 dB.",
-      "source": "ICASSP 2023 AEC Challenge blind real-world test recordings.",
-      "provenance": {
-        "Metric interval": "AECMOS evaluated on [26.940, 38.880) s, before the common playback gain.",
-        "Original sample ID": "3e6lVI5h9UeSlRekiZb9gw_doubletalk-with-movement",
-        "Reference alignment": "Shared GCC-PHAT estimate from the first 10 s: 72.938 ms. Original loopback supplied to AECMOS.",
-        "Inference context": "Full recording processed before extracting the excerpt."
-      }
+      "source": "ICASSP 2023 AEC Challenge blind real-world test recordings."
     },
     {
       "id": "blind-03-dt",
@@ -817,14 +779,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [26.940, 38.880) s; common playback gain 9.41 dB.",
-      "source": "ICASSP 2023 AEC Challenge blind real-world test recordings.",
-      "provenance": {
-        "Metric interval": "AECMOS evaluated on [26.940, 38.880) s, before the common playback gain.",
-        "Original sample ID": "2ubChTJUJUaBGSJZ048spA_doubletalk",
-        "Reference alignment": "Shared GCC-PHAT estimate from the first 10 s: 36.000 ms. Original loopback supplied to AECMOS.",
-        "Inference context": "Full recording processed before extracting the excerpt."
-      }
+      "source": "ICASSP 2023 AEC Challenge blind real-world test recordings."
     },
     {
       "id": "blind-05-fs",
@@ -901,14 +856,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [12.000, 24.000) s; common playback gain -7.00 dB.",
-      "source": "ICASSP 2023 AEC Challenge blind real-world test recordings.",
-      "provenance": {
-        "Metric interval": "AECMOS evaluated on [12.000, 24.000) s, before the common playback gain.",
-        "Original sample ID": "11831959-16d3-4240-b4d7-6c3f19936718_farend-singletalk",
-        "Reference alignment": "Shared GCC-PHAT estimate from the first 10 s: 229.875 ms. Original loopback supplied to AECMOS.",
-        "Inference context": "Full recording processed before extracting the excerpt."
-      }
+      "source": "ICASSP 2023 AEC Challenge blind real-world test recordings."
     },
     {
       "id": "blind-06-fs",
@@ -985,14 +933,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [12.000, 24.000) s; common playback gain -6.68 dB.",
-      "source": "ICASSP 2023 AEC Challenge blind real-world test recordings.",
-      "provenance": {
-        "Metric interval": "AECMOS evaluated on [12.000, 24.000) s, before the common playback gain.",
-        "Original sample ID": "2b546bf4-5b3f-4b07-8675-a8940491fc03_farend-singletalk",
-        "Reference alignment": "Shared GCC-PHAT estimate from the first 10 s: 241.750 ms. Original loopback supplied to AECMOS.",
-        "Inference context": "Full recording processed before extracting the excerpt."
-      }
+      "source": "ICASSP 2023 AEC Challenge blind real-world test recordings."
     },
     {
       "id": "native-0047-dt",
@@ -1101,12 +1042,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 7.22 dB.",
-      "source": "ICASSP 2022 AEC Challenge fullband synthetic dataset, processed at 16 kHz.",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
-        "Original sample ID": "f00161_mic"
-      }
+      "source": "ICASSP 2022 AEC Challenge fullband synthetic dataset, processed at 16 kHz."
     },
     {
       "id": "native-0109-dt",
@@ -1215,12 +1151,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 20.85 dB.",
-      "source": "ICASSP 2022 AEC Challenge fullband synthetic dataset, processed at 16 kHz.",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
-        "Original sample ID": "f08501_mic"
-      }
+      "source": "ICASSP 2022 AEC Challenge fullband synthetic dataset, processed at 16 kHz."
     },
     {
       "id": "native-0173-dt",
@@ -1329,12 +1260,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 21.61 dB.",
-      "source": "ICASSP 2022 AEC Challenge fullband synthetic dataset, processed at 16 kHz.",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
-        "Original sample ID": "f00956_mic"
-      }
+      "source": "ICASSP 2022 AEC Challenge fullband synthetic dataset, processed at 16 kHz."
     },
     {
       "id": "native-0224-dt",
@@ -1443,12 +1369,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 12.23 dB.",
-      "source": "ICASSP 2022 AEC Challenge fullband synthetic dataset, processed at 16 kHz.",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
-        "Original sample ID": "f06627_mic"
-      }
+      "source": "ICASSP 2022 AEC Challenge fullband synthetic dataset, processed at 16 kHz."
     },
     {
       "id": "native-0060-fs",
@@ -1533,12 +1454,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 13.02 dB.",
-      "source": "ICASSP 2022 AEC Challenge fullband synthetic dataset, processed at 16 kHz.",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
-        "Original sample ID": "f04194_echo"
-      }
+      "source": "ICASSP 2022 AEC Challenge fullband synthetic dataset, processed at 16 kHz."
     },
     {
       "id": "native-0210-fs",
@@ -1623,12 +1539,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 4.10 dB.",
-      "source": "ICASSP 2022 AEC Challenge fullband synthetic dataset, processed at 16 kHz.",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
-        "Original sample ID": "f05455_echo"
-      }
+      "source": "ICASSP 2022 AEC Challenge fullband synthetic dataset, processed at 16 kHz."
     },
     {
       "id": "native-0255-fs",
@@ -1713,12 +1624,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 3.03 dB.",
-      "source": "ICASSP 2022 AEC Challenge fullband synthetic dataset, processed at 16 kHz.",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
-        "Original sample ID": "f09131_echo"
-      }
+      "source": "ICASSP 2022 AEC Challenge fullband synthetic dataset, processed at 16 kHz."
     },
     {
       "id": "native-0307-fs",
@@ -1803,12 +1709,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 37.60 dB.",
-      "source": "ICASSP 2022 AEC Challenge fullband synthetic dataset, processed at 16 kHz.",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
-        "Original sample ID": "f07079_echo"
-      }
+      "source": "ICASSP 2022 AEC Challenge fullband synthetic dataset, processed at 16 kHz."
     },
     {
       "id": "synth-000045",
@@ -1914,11 +1815,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain -5.44 dB.",
-      "source": "Linear synthetic",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the [0.000, 9.984) s interval, before the common playback gain."
-      }
+      "source": "Linear synthetic"
     },
     {
       "id": "synth-000066",
@@ -2024,11 +1921,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 15.31 dB.",
-      "source": "Linear synthetic",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the [0.000, 9.984) s interval, before the common playback gain."
-      }
+      "source": "Linear synthetic"
     },
     {
       "id": "synth-000257",
@@ -2134,11 +2027,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 11.04 dB.",
-      "source": "Linear synthetic",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the [0.000, 9.984) s interval, before the common playback gain."
-      }
+      "source": "Linear synthetic"
     },
     {
       "id": "synth-000120",
@@ -2235,11 +2124,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain -0.18 dB.",
-      "source": "Linear synthetic",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the [0.000, 9.984) s interval, before the common playback gain."
-      }
+      "source": "Linear synthetic"
     },
     {
       "id": "synth-000004",
@@ -2331,11 +2216,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain -0.18 dB.",
-      "source": "Linear synthetic",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the [0.000, 9.984) s interval, before the common playback gain."
-      }
+      "source": "Linear synthetic"
     },
     {
       "id": "synth-000193",
@@ -2427,11 +2308,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain -0.18 dB.",
-      "source": "Linear synthetic",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the [0.000, 9.984) s interval, before the common playback gain."
-      }
+      "source": "Linear synthetic"
     },
     {
       "id": "synth-000434",
@@ -2523,11 +2400,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 15.85 dB.",
-      "source": "Linear synthetic",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the [0.000, 9.984) s interval, before the common playback gain."
-      }
+      "source": "Linear synthetic"
     },
     {
       "id": "synth-000200",
@@ -2610,11 +2483,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain -0.18 dB.",
-      "source": "Linear synthetic",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the [0.000, 9.984) s interval, before the common playback gain."
-      }
+      "source": "Linear synthetic"
     },
     {
       "id": "synth-000362",
@@ -2697,11 +2566,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain -0.18 dB.",
-      "source": "Linear synthetic",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the [0.000, 9.984) s interval, before the common playback gain."
-      }
+      "source": "Linear synthetic"
     },
     {
       "id": "synth-000007",
@@ -2791,11 +2656,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 14.68 dB.",
-      "source": "Linear synthetic",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the [0.000, 9.984) s interval, before the common playback gain."
-      }
+      "source": "Linear synthetic"
     },
     {
       "id": "car-0702-dt-clean",
@@ -2904,12 +2765,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 4.45 dB.",
-      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise.",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
-        "Original sample ID": "weilai_test_00175"
-      }
+      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise."
     },
     {
       "id": "car-1202-dt-clean",
@@ -3018,12 +2874,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 12.38 dB.",
-      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise.",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
-        "Original sample ID": "weilai_test_00300"
-      }
+      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise."
     },
     {
       "id": "car-0395-dt-noisy",
@@ -3132,12 +2983,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 11.65 dB.",
-      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise.",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
-        "Original sample ID": "weilai_test_00098"
-      }
+      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise."
     },
     {
       "id": "car-0555-dt-noisy",
@@ -3246,12 +3092,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 4.89 dB.",
-      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise.",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
-        "Original sample ID": "weilai_test_00138"
-      }
+      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise."
     },
     {
       "id": "car-0635-dt-noisy",
@@ -3360,12 +3201,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 13.04 dB.",
-      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise.",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
-        "Original sample ID": "weilai_test_00158"
-      }
+      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise."
     },
     {
       "id": "car-0628-fs-clean",
@@ -3450,12 +3286,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 13.26 dB.",
-      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise.",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
-        "Original sample ID": "weilai_test_00157"
-      }
+      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise."
     },
     {
       "id": "car-0728-fs-clean",
@@ -3540,12 +3371,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 11.04 dB.",
-      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise.",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
-        "Original sample ID": "weilai_test_00182"
-      }
+      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise."
     },
     {
       "id": "car-1308-fs-clean",
@@ -3630,12 +3456,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 13.19 dB.",
-      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise.",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
-        "Original sample ID": "weilai_test_00327"
-      }
+      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise."
     },
     {
       "id": "car-0753-fs-noisy",
@@ -3645,7 +3466,7 @@
       "duration": 9.984,
       "sample_rate": 16000,
       "featured": false,
-      "note": "Target includes background noise",
+      "note": "ENR 30.0 dB. Target includes background noise",
       "events": [],
       "tracks": {
         "input": {
@@ -3720,13 +3541,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 15.98 dB.",
-      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise.",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
-        "Original sample ID": "weilai_test_00188",
-        "Echo-to-noise ratio": "30.0 dB"
-      }
+      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise."
     },
     {
       "id": "car-0781-fs-noisy",
@@ -3736,7 +3551,7 @@
       "duration": 9.984,
       "sample_rate": 16000,
       "featured": false,
-      "note": "Target includes background noise",
+      "note": "ENR 30.0 dB. Target includes background noise",
       "events": [],
       "tracks": {
         "input": {
@@ -3811,13 +3626,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 14.84 dB.",
-      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise.",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
-        "Original sample ID": "weilai_test_00195",
-        "Echo-to-noise ratio": "30.0 dB"
-      }
+      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise."
     },
     {
       "id": "car-1005-fs-noisy",
@@ -3827,7 +3636,7 @@
       "duration": 9.984,
       "sample_rate": 16000,
       "featured": false,
-      "note": "Target includes background noise",
+      "note": "ENR 20.0 dB. Target includes background noise",
       "events": [],
       "tracks": {
         "input": {
@@ -3902,13 +3711,7 @@
         }
       },
       "spectrogram_max_hz": 8000,
-      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 16.75 dB.",
-      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise.",
-      "provenance": {
-        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
-        "Original sample ID": "weilai_test_00251",
-        "Echo-to-noise ratio": "20.0 dB"
-      }
+      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise."
     }
   ]
 }

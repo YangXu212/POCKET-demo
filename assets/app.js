@@ -25,7 +25,7 @@
     return String(value || '').split('·').map((part) => labels[part.trim()] || part.trim()).join(' · ');
   }
   function conditionFacts(item) {
-    return [...String(item.note || '').matchAll(/(?:SER|SNR)\s+[-+−]?\d+(?:\.\d+)?\s*dB/g)].map((match) => match[0]);
+    return [...String(item.note || '').matchAll(/(?:SER|SNR|ENR)\s+[-+−]?\d+(?:\.\d+)?\s*dB/g)].map((match) => match[0]);
   }
   function trackFor(id) { return sample?.tracks?.[id] || null; }
   function duration() { return Number(sample?.duration) || currentBuffer?.duration || 0; }
@@ -272,12 +272,8 @@
     bindSpectra($('large-spectra'));
     drawPosition();
   }
-  function renderProvenance() {
-    const fields = [
-      ['Source', sample.source], ['Playback', sample.processing], ['License', sample.license],
-      ...Object.entries(sample.provenance || {})
-    ].filter(([,value]) => value !== undefined && value !== null && value !== '');
-    $('sample-provenance').innerHTML = `<dl>${fields.map(([key, value]) => `<dt>${esc(key)}</dt><dd>${esc(typeof value === 'object' ? JSON.stringify(value) : value)}</dd>`).join('')}</dl>`;
+  function renderSource() {
+    $('sample-source').textContent = sample.source || sample.dataset;
   }
   function selectSample(id, updateHash = true) {
     const next = samples.find((item) => item.id === id);
@@ -305,7 +301,7 @@
     $('compare-a').innerHTML = selectOptions; $('compare-b').innerHTML = selectOptions;
     $('compare-a').value = available.find((method) => normalize(method.label) === 'nkf')?.id || available[0]?.id || '';
     $('compare-b').value = activeMethod;
-    renderLargeSpectra(); renderProvenance(); updatePlaybackUI(); renderIndex(); drawPosition();
+    renderLargeSpectra(); renderSource(); updatePlaybackUI(); renderIndex(); drawPosition();
     announce('Ready.');
     if (updateHash) history.replaceState(null, '', `#sample=${encodeURIComponent(id)}`);
   }
@@ -366,7 +362,7 @@
       requestAnimationFrame(tick);
     } catch (error) {
       $('load-message').classList.add('error');
-      $('load-message').textContent = `${error.message} ${location.protocol === 'file:' ? 'Open this companion through a local web server or its GitHub Pages URL.' : 'Please refresh or check the collection files.'}`;
+      $('load-message').textContent = `${error.message} ${location.protocol === 'file:' ? 'Open the audio examples at https://yangxu212.github.io/POCKET-demo/.' : 'Please refresh the page.'}`;
       $('result-count').textContent = 'Collection unavailable';
       $('prev-page').disabled = true; $('next-page').disabled = true;
     }

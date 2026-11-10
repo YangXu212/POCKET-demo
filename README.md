@@ -18,19 +18,7 @@ Supplementary audio examples with synchronized method switching, spectrograms, a
 
 Each example includes the microphone input, **NLMS, STFT-KF, HB-DNN-NLMS, Meta-AF, NKF, Neural-MLMS, and POCKET**. A target signal is provided where available. The collection covers single-talk, double-talk, echo-path changes, movement, and clean/noisy conditions.
 
-Audio is mono, 16 kHz, 24-bit PCM. Methods share a common time interval and playback gain within each example. Spectrograms use a fixed −90 to 0 dBFS scale. Source identifiers, processing details, and metrics are stored in [data/manifest.json](data/manifest.json).
-
-POCKET uses the paper checkpoints with `ReLU(Re(P))`, `FIRST1`, and `Cap1.5`. Model source code and checkpoints are not included in this repository.
-
-## Local use
-
-Run from this directory:
-
-```sh
-python -m http.server 8770 --bind 127.0.0.1
-```
-
-Open [http://127.0.0.1:8770](http://127.0.0.1:8770) in a browser. Select an example, then click a method to play or switch tracks at the current position. Click a spectrogram to seek.
+Select an example, then click a method to play or switch tracks at the current position. Click a spectrogram to seek.
 
 ## Sources and attribution
 

@@ -138,6 +138,7 @@ kbd { font: inherit; border: 1px solid #bdc7ce; border-radius: 2px; padding: 0 3
 .large-spectrum .spectrum-axis { display: flex; justify-content: space-between; margin-left: 44px; margin-top: 3px; font-size: 12px; color: var(--muted); }
 .sample-details { margin-top: 12px; font-size: 12px; color: var(--muted); }
 .sample-details summary { cursor: pointer; font-size: 12px; }
+#sample-source { margin-top: 12px; }
 .sample-details dl { display: grid; grid-template-columns: 130px 1fr; gap: 6px 15px; font-size: 12px; margin: 12px 0; }
 .sample-details dt { color: var(--ink); }
 .sample-details dd { margin: 0; overflow-wrap: anywhere; }
