@@ -1,0 +1,10 @@
+# The repository contains static demonstration assets only.
+*.log
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.safetensors
+__pycache__/
+.DS_Store
+Thumbs.db

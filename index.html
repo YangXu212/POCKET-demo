@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Supplementary audio examples for POCKET: A Factorized Kalman Control Network for Low-Complexity Acoustic Echo Cancellation.">
+  <meta name="theme-color" content="#172c42">
+  <title>POCKET · Supplementary Audio Examples</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#explorer">Skip to audio examples</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="POCKET home">POCKET</a>
+    <nav aria-label="Page navigation"><a href="#explorer">Audio examples</a></nav>
+  </header>
+  <main id="top">
+    <section class="hero page-width" aria-labelledby="paper-title">
+      <h1 id="paper-title"><strong>POCKET:</strong> A Factorized Kalman Control Network for Low-Complexity Acoustic Echo Cancellation</h1>
+      <p class="authors">Yang Xu<sup>1,2</sup>, Ze Li<sup>1,2</sup>, Ronghui Hu<sup>1,2</sup>, Shiruo Sun<sup>2</sup>, Yuxiang Hu<sup>2</sup>, Kai Chen<sup>1,2</sup>, and Jing Lu<sup>1,2</sup></p>
+      <div class="affiliations"><p><sup>1</sup> Key Laboratory of Modern Acoustics, Institute of Acoustics, Nanjing University, China</p><p><sup>2</sup> NJU-Horizon Intelligent Audio Lab, Horizon Robotics, China</p></div>
+    </section>
+
+    <section class="explorer-section" id="explorer" aria-labelledby="explorer-title">
+      <div class="page-width">
+        <div class="section-heading"><h2 id="explorer-title">Audio examples <span id="collection-count"></span></h2><p class="section-intro">Switch methods at the same playback position. Click a spectrogram to seek.</p></div>
+        <div class="filters" role="search" aria-label="Filter audio examples">
+          <label>Dataset<select id="dataset-filter"><option value="">All datasets</option></select></label>
+          <label>Scenario<select id="scenario-filter"><option value="">All scenarios</option></select></label>
+          <label class="search-label">Search<input id="search-filter" type="search" placeholder="Example number or condition" autocomplete="off"></label>
+          <button class="clear-button" id="clear-filters" type="button">Reset filters</button>
+        </div>
+        <div class="collection-layout">
+          <aside class="sample-index" aria-label="Audio example index">
+            <div class="index-heading"><span id="result-count">Loading examples…</span></div>
+            <div id="sample-list" class="sample-list"></div>
+            <div class="pagination"><button id="prev-page" aria-label="Previous examples" type="button">←</button><span id="page-label">—</span><button id="next-page" aria-label="Next examples" type="button">→</button></div>
+          </aside>
+
+          <article class="listening-desk" id="listening-desk" aria-labelledby="sample-title">
+            <div id="load-message" class="load-message" role="status">Loading audio metadata…</div>
+            <div id="sample-content" hidden>
+              <div class="sample-heading"><div><p class="sample-kicker" id="sample-kicker"></p><h3 id="sample-title"></h3></div></div>
+              <p id="sample-note" class="sample-note"></p>
+              <div class="sample-facts" id="sample-facts"></div>
+              <div class="transport" aria-label="Shared audio playback controls">
+                <div class="transport-top"><button id="play-toggle" class="play-main" type="button" aria-label="Play selected method"><span aria-hidden="true">▶</span></button><div class="now-playing"><span class="small-label">Selected method</span><strong id="now-method">POCKET</strong></div><div class="playback-clock"><span id="elapsed-time">0:00.0</span><span>/</span><span id="total-time">0:00.0</span></div><button id="loop-toggle" class="utility-button" type="button" aria-pressed="false" title="Loop the full example">↻ <span>Loop</span></button><label class="volume-control"><span>Volume</span><input id="volume-slider" type="range" min="0" max="1" step="0.01" value="0.75" aria-label="Shared playback volume"></label></div>
+                <label class="timeline-label" for="time-slider">Playback position</label><input id="time-slider" class="time-slider" type="range" min="0" max="1" step="0.001" value="0" aria-label="Playback position">
+                <div class="transport-bottom"><span id="playback-status" role="status" aria-live="polite">Choose a method to listen.</span><span class="keyboard-hint"><kbd>Space</kbd> play/pause · <kbd>←</kbd><kbd>→</kbd> seek</span></div>
+              </div>
+
+              <div class="matrix-heading"><span>Method</span><span>Spectrogram</span><span>Metrics</span></div>
+              <div id="method-matrix" class="method-matrix" aria-label="All methods, spectrograms, and metrics"></div>
+              <div class="matrix-axis"><span>Frequency: <b id="frequency-label">0–8 kHz</b></span><span>Time: 0 → <b id="axis-duration"></b></span></div>
+              <div class="spectrogram-legend" aria-label="Shared spectrogram amplitude scale from minus 90 to 0 decibels relative to full scale"><span>Amplitude (dBFS)</span><div class="color-scale"><img src="assets/spectrogram-scale.png" alt="Inferno color scale from dark at minus 90 dBFS to light at 0 dBFS"><div class="color-scale-ticks" aria-hidden="true"><span>−90</span><span>−60</span><span>−30</span><span>0</span></div></div></div>
+
+              <details class="comparison-panel" id="comparison-panel"><summary><span>Compare enlarged spectrograms</span><span class="details-hint" aria-hidden="true">+</span></summary><div class="comparison-body"><div class="comparison-controls"><label>Track A<select id="compare-a" aria-label="Comparison track A"></select></label><button id="play-a" type="button">Play A</button><label>Track B<select id="compare-b" aria-label="Comparison track B"></select></label><button id="play-b" type="button">Play B</button></div><div id="large-spectra" class="large-spectra"></div></div></details>
+              <details class="sample-details"><summary>Source & processing details</summary><div id="sample-provenance"></div></details>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer page-width"><span>Contact: <a href="mailto:yang.xu26@smail.nju.edu.cn">Yang Xu</a> · <a href="mailto:lujing@nju.edu.cn">Jing Lu</a></span><span>Supplementary audio examples</span><a href="#top">Top ↑</a></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <noscript><p class="noscript">JavaScript is required for synchronized playback and filtering. Audio files and metadata remain available in the repository.</p></noscript>
+</body>
+</html>

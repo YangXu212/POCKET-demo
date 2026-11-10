@@ -1,0 +1,3914 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-11-10",
+  "methods": [
+    {
+      "id": "input",
+      "label": "Input"
+    },
+    {
+      "id": "nlms",
+      "label": "NLMS"
+    },
+    {
+      "id": "stft_kf",
+      "label": "STFT-KF"
+    },
+    {
+      "id": "hb_dnn_nlms",
+      "label": "HB-DNN-NLMS"
+    },
+    {
+      "id": "meta_af",
+      "label": "Meta-AF"
+    },
+    {
+      "id": "nkf",
+      "label": "NKF"
+    },
+    {
+      "id": "neural_mlms",
+      "label": "Neural-MLMS"
+    },
+    {
+      "id": "pocket",
+      "label": "POCKET"
+    },
+    {
+      "id": "target",
+      "label": "Target"
+    }
+  ],
+  "spectrogram_max_hz": 8000,
+  "samples": [
+    {
+      "id": "synth-000491",
+      "title": "Example 01 — Double-talk · static echo path",
+      "dataset": "Linear synthetic",
+      "scenario": "DT · static",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": true,
+      "note": "SER -5.4 dB",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/synth-000491/input.wav",
+          "spectrogram": "spectrograms/synth-000491/input.png",
+          "metrics": {},
+          "sha256": "21f9204833a6e70601f97a4a7a45f4abcb30d1838f1298e3fc2998e9ad57137d"
+        },
+        "nlms": {
+          "audio": "audio/synth-000491/nlms.wav",
+          "spectrogram": "spectrograms/synth-000491/nlms.png",
+          "metrics": {
+            "PESQ ↑": 1.199,
+            "ESTOI ↑": 0.592,
+            "tERLE (dB) ↑": 0.659
+          },
+          "sha256": "57c4787121a5a08ea5d5124182dfa066c739871dc069600a7bd35008ef809188"
+        },
+        "stft_kf": {
+          "audio": "audio/synth-000491/stft_kf.wav",
+          "spectrogram": "spectrograms/synth-000491/stft_kf.png",
+          "metrics": {
+            "PESQ ↑": 1.562,
+            "ESTOI ↑": 0.8,
+            "tERLE (dB) ↑": 14.354
+          },
+          "sha256": "f44188bdfaaf1dfbc2af3eea3cb7313e740f1ff2195f6dfcd46d228e82712032"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/synth-000491/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/synth-000491/hb_dnn_nlms.png",
+          "metrics": {
+            "PESQ ↑": 1.865,
+            "ESTOI ↑": 0.885,
+            "tERLE (dB) ↑": 19.239
+          },
+          "sha256": "c079cd81fe84c02db04fac52bccb312cb0f200341447513cf8f119647879e344"
+        },
+        "meta_af": {
+          "audio": "audio/synth-000491/meta_af.wav",
+          "spectrogram": "spectrograms/synth-000491/meta_af.png",
+          "metrics": {
+            "PESQ ↑": 1.622,
+            "ESTOI ↑": 0.837,
+            "tERLE (dB) ↑": 11.183
+          },
+          "sha256": "398871d392698d55ee0403b62eec16b7697c6ef353befa98ba41ca038061bc06"
+        },
+        "nkf": {
+          "audio": "audio/synth-000491/nkf.wav",
+          "spectrogram": "spectrograms/synth-000491/nkf.png",
+          "metrics": {
+            "PESQ ↑": 1.827,
+            "ESTOI ↑": 0.822,
+            "tERLE (dB) ↑": 16.843
+          },
+          "sha256": "7b225ed7ecb1d05bce9604572395f5ae43d5e1d5e41362895990e0165d68b200"
+        },
+        "neural_mlms": {
+          "audio": "audio/synth-000491/neural_mlms.wav",
+          "spectrogram": "spectrograms/synth-000491/neural_mlms.png",
+          "metrics": {
+            "PESQ ↑": 1.672,
+            "ESTOI ↑": 0.815,
+            "tERLE (dB) ↑": 17.519
+          },
+          "sha256": "32dadf49dc65b6417e50852649bd962cfae06d86db6b3759bb93e78b10e3875e"
+        },
+        "pocket": {
+          "audio": "audio/synth-000491/pocket.wav",
+          "spectrogram": "spectrograms/synth-000491/pocket.png",
+          "metrics": {
+            "PESQ ↑": 2.515,
+            "ESTOI ↑": 0.938,
+            "tERLE (dB) ↑": 22.475
+          },
+          "sha256": "db48aab7c6c9ef8f3d53d251b4b272db60037d088b85900dce47067612539378"
+        },
+        "target": {
+          "audio": "audio/synth-000491/target.wav",
+          "spectrogram": "spectrograms/synth-000491/target.png",
+          "metrics": {},
+          "sha256": "16f70ef098d51675d48a3adb82297661f2d0464624555d892ad7daac594d4694"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain -0.04 dB.",
+      "source": "Linear synthetic",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the [0.000, 9.984) s interval, before the common playback gain."
+      }
+    },
+    {
+      "id": "synth-000386",
+      "title": "Example 02 — Far-end single-talk · echo-path change",
+      "dataset": "Linear synthetic",
+      "scenario": "FS · EPC",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": true,
+      "note": "",
+      "events": [
+        {
+          "time": 3.22,
+          "label": "Path change begins"
+        },
+        {
+          "time": 4.22,
+          "label": "Path change ends"
+        }
+      ],
+      "tracks": {
+        "input": {
+          "audio": "audio/synth-000386/input.wav",
+          "spectrogram": "spectrograms/synth-000386/input.png",
+          "metrics": {},
+          "sha256": "fa620fe6484bf449f0c9bee1a8882f04149f298814cb8bd5898e4d53f878fd37"
+        },
+        "nlms": {
+          "audio": "audio/synth-000386/nlms.wav",
+          "spectrogram": "spectrograms/synth-000386/nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 8.968
+          },
+          "sha256": "ef53bd1f2ba00a5e98a25d3d31f6532a7b34c30c57448b7e0821611248356a88"
+        },
+        "stft_kf": {
+          "audio": "audio/synth-000386/stft_kf.wav",
+          "spectrogram": "spectrograms/synth-000386/stft_kf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 22.51
+          },
+          "sha256": "0bf6c31e9061db3e989eb9d5539670cd9c430c6311f6cf8b943dc1469ed219b1"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/synth-000386/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/synth-000386/hb_dnn_nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 13.514
+          },
+          "sha256": "c6cd9e21253c69b92dad64cf750366cd87906cdfbb698549d67fb58162016e61"
+        },
+        "meta_af": {
+          "audio": "audio/synth-000386/meta_af.wav",
+          "spectrogram": "spectrograms/synth-000386/meta_af.png",
+          "metrics": {
+            "ERLE (dB) ↑": 4.191
+          },
+          "sha256": "f1f0b71b568f41317b93dacb3e2c3e84d483d2cd2bdff2ec8ef4d94df0acb639"
+        },
+        "nkf": {
+          "audio": "audio/synth-000386/nkf.wav",
+          "spectrogram": "spectrograms/synth-000386/nkf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 3.247
+          },
+          "sha256": "55ba7706fa9d6493beabdb2d6f0bab0e958d27c4d92ab7f4206969d9503705b9"
+        },
+        "neural_mlms": {
+          "audio": "audio/synth-000386/neural_mlms.wav",
+          "spectrogram": "spectrograms/synth-000386/neural_mlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 18.093
+          },
+          "sha256": "bf5b7a4ee09ac99d1362777f8d4629cd269b7398c65f8851d9b3eae136b4e476"
+        },
+        "pocket": {
+          "audio": "audio/synth-000386/pocket.wav",
+          "spectrogram": "spectrograms/synth-000386/pocket.png",
+          "metrics": {
+            "ERLE (dB) ↑": 37.476
+          },
+          "sha256": "a50075f31222a1364248f71477f8140e4d3fc793de6381666288bee0ac0071f0"
+        },
+        "target": {
+          "audio": "audio/synth-000386/target.wav",
+          "spectrogram": "spectrograms/synth-000386/target.png",
+          "metrics": {},
+          "sha256": "d0343ef67143fd0a68053af5a93b69d2dee249fbbf6afe6f92f7b1524a9227e7"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 6.64 dB.",
+      "source": "Linear synthetic",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the [0.000, 9.984) s interval, before the common playback gain."
+      }
+    },
+    {
+      "id": "blind-01-dt",
+      "title": "Example 03 — Double-talk · movement",
+      "dataset": "AEC Challenge real",
+      "scenario": "DT · movement",
+      "duration": 11.94,
+      "sample_rate": 16000,
+      "featured": true,
+      "note": "",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/blind-01-dt/input.wav",
+          "spectrogram": "spectrograms/blind-01-dt/input.png",
+          "metrics": {},
+          "sha256": "92aa92f49a53d72b209c30d8d208a2d98a8ba7aad1ecc9d14c45963f1253e457"
+        },
+        "nlms": {
+          "audio": "audio/blind-01-dt/nlms.wav",
+          "spectrogram": "spectrograms/blind-01-dt/nlms.png",
+          "metrics": {
+            "AECMOS Echo ↑": 2.843,
+            "AECMOS Other ↑": 2.924
+          },
+          "sha256": "6525969ca515a98a685c17233798321fe79dfce5e8058fdef236d426b10ac830"
+        },
+        "stft_kf": {
+          "audio": "audio/blind-01-dt/stft_kf.wav",
+          "spectrogram": "spectrograms/blind-01-dt/stft_kf.png",
+          "metrics": {
+            "AECMOS Echo ↑": 3.918,
+            "AECMOS Other ↑": 3.87
+          },
+          "sha256": "16d4aca5b6310e4d5daa96632ea2ddb2a9de9864cd853b88948f88ba80327be4"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/blind-01-dt/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/blind-01-dt/hb_dnn_nlms.png",
+          "metrics": {
+            "AECMOS Echo ↑": 3.429,
+            "AECMOS Other ↑": 3.88
+          },
+          "sha256": "77dc0594fc059cdcc785d11f20ab743e4bc64e00a54ea096bdfa4116cdc5db1a"
+        },
+        "meta_af": {
+          "audio": "audio/blind-01-dt/meta_af.wav",
+          "spectrogram": "spectrograms/blind-01-dt/meta_af.png",
+          "metrics": {
+            "AECMOS Echo ↑": 3.293,
+            "AECMOS Other ↑": 3.113
+          },
+          "sha256": "6f5afe008f70582251d915bbcc8ececef95dc9b8777906c52788ee63b6b23b28"
+        },
+        "nkf": {
+          "audio": "audio/blind-01-dt/nkf.wav",
+          "spectrogram": "spectrograms/blind-01-dt/nkf.png",
+          "metrics": {
+            "AECMOS Echo ↑": 3.841,
+            "AECMOS Other ↑": 3.943
+          },
+          "sha256": "8e523f4d0d76a6e844e4c270060ac66e44ab9a6fefd3c74da477dc82e2039ec9"
+        },
+        "neural_mlms": {
+          "audio": "audio/blind-01-dt/neural_mlms.wav",
+          "spectrogram": "spectrograms/blind-01-dt/neural_mlms.png",
+          "metrics": {
+            "AECMOS Echo ↑": 1.988,
+            "AECMOS Other ↑": 3.821
+          },
+          "sha256": "b4a7e2cb5fdcf955fd58cf2cd6f9c9b67c1a34d51e66e223e02341eef772d8b6"
+        },
+        "pocket": {
+          "audio": "audio/blind-01-dt/pocket.wav",
+          "spectrogram": "spectrograms/blind-01-dt/pocket.png",
+          "metrics": {
+            "AECMOS Echo ↑": 4.463,
+            "AECMOS Other ↑": 4.052
+          },
+          "sha256": "fd1e6e62baae69083f7848a79fcb9d65d04e83f6b9beb45b019f17ed829563b4"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [26.940, 38.880) s; common playback gain 8.90 dB.",
+      "source": "ICASSP 2023 AEC Challenge blind real-world test recordings.",
+      "provenance": {
+        "Metric interval": "AECMOS evaluated on [26.940, 38.880) s, before the common playback gain.",
+        "Original sample ID": "INuwzS29ZEq2XiBD4OzWoQ_doubletalk-with-movement",
+        "Reference alignment": "Shared GCC-PHAT estimate from the first 10 s: 15.625 ms. Original loopback supplied to AECMOS.",
+        "Inference context": "Full recording processed before extracting the excerpt."
+      }
+    },
+    {
+      "id": "synth-000363",
+      "title": "Example 04 — Double-talk · echo-path change",
+      "dataset": "Linear synthetic",
+      "scenario": "DT · EPC",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": true,
+      "note": "SER 9.4 dB",
+      "events": [
+        {
+          "time": 3.96,
+          "label": "Path change begins"
+        },
+        {
+          "time": 4.96,
+          "label": "Path change ends"
+        }
+      ],
+      "tracks": {
+        "input": {
+          "audio": "audio/synth-000363/input.wav",
+          "spectrogram": "spectrograms/synth-000363/input.png",
+          "metrics": {},
+          "sha256": "7a97fe714d31dfff38aa88af241f9f9751715c283e8bb0254e62934ddd549347"
+        },
+        "nlms": {
+          "audio": "audio/synth-000363/nlms.wav",
+          "spectrogram": "spectrograms/synth-000363/nlms.png",
+          "metrics": {
+            "PESQ ↑": 1.12,
+            "ESTOI ↑": 0.43,
+            "tERLE (dB) ↑": -31.808
+          },
+          "sha256": "e0cb950dee54f391749cf5431b96ee9bd697827d2661da02cd325f4367f18e92"
+        },
+        "stft_kf": {
+          "audio": "audio/synth-000363/stft_kf.wav",
+          "spectrogram": "spectrograms/synth-000363/stft_kf.png",
+          "metrics": {
+            "PESQ ↑": 2.001,
+            "ESTOI ↑": 0.819,
+            "tERLE (dB) ↑": -0.048
+          },
+          "sha256": "78d9b4d134340ec84e7ff5e4c8456d5e3a67bf53d37b9c242799cee6086621e0"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/synth-000363/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/synth-000363/hb_dnn_nlms.png",
+          "metrics": {
+            "PESQ ↑": 1.371,
+            "ESTOI ↑": 0.652,
+            "tERLE (dB) ↑": -20.673
+          },
+          "sha256": "9c6a811bd44a8c235726302c1eb321ce0d9d3769061f524ac080c9f3f4d36884"
+        },
+        "meta_af": {
+          "audio": "audio/synth-000363/meta_af.wav",
+          "spectrogram": "spectrograms/synth-000363/meta_af.png",
+          "metrics": {
+            "PESQ ↑": 1.989,
+            "ESTOI ↑": 0.864,
+            "tERLE (dB) ↑": -1.869
+          },
+          "sha256": "aee9fc77cb3a7fe1041a691509973c73540165014b4cdcc9f7e0e3a12ba9c3b9"
+        },
+        "nkf": {
+          "audio": "audio/synth-000363/nkf.wav",
+          "spectrogram": "spectrograms/synth-000363/nkf.png",
+          "metrics": {
+            "PESQ ↑": 1.229,
+            "ESTOI ↑": 0.72,
+            "tERLE (dB) ↑": -20.135
+          },
+          "sha256": "3c8fb5cf0bc33cfea8c9777ddc7e7abcb72d6f8a6abfdd2506fe7183be80d624"
+        },
+        "neural_mlms": {
+          "audio": "audio/synth-000363/neural_mlms.wav",
+          "spectrogram": "spectrograms/synth-000363/neural_mlms.png",
+          "metrics": {
+            "PESQ ↑": 1.162,
+            "ESTOI ↑": 0.745,
+            "tERLE (dB) ↑": -15.706
+          },
+          "sha256": "108d0420cb3f593dbef18bfa9d639502d003d020849597244cf0fae3aa837f93"
+        },
+        "pocket": {
+          "audio": "audio/synth-000363/pocket.wav",
+          "spectrogram": "spectrograms/synth-000363/pocket.png",
+          "metrics": {
+            "PESQ ↑": 3.245,
+            "ESTOI ↑": 0.934,
+            "tERLE (dB) ↑": 6.888
+          },
+          "sha256": "e3e6709081e263259b380fe5ba827968ceb0e971412f0a04babbd7241bfe34e2"
+        },
+        "target": {
+          "audio": "audio/synth-000363/target.wav",
+          "spectrogram": "spectrograms/synth-000363/target.png",
+          "metrics": {},
+          "sha256": "226bd926789dd8f33bf680878b1465cc71dbb0dea05241f75de4dafe96f08e5e"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 14.87 dB.",
+      "source": "Linear synthetic",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the [0.000, 9.984) s interval, before the common playback gain."
+      }
+    },
+    {
+      "id": "car-0174-dt-clean",
+      "title": "Example 05 — Double-talk · clean",
+      "dataset": "Recorded vehicle echo",
+      "scenario": "DT · clean",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": true,
+      "note": "SER 0.0 dB",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/car-0174-dt-clean/input.wav",
+          "spectrogram": "spectrograms/car-0174-dt-clean/input.png",
+          "metrics": {
+            "PESQ ↑": 1.873,
+            "ESTOI ↑": 0.799,
+            "tERLE (dB) ↑": 0,
+            "LSD (dB) ↓": 8.274
+          },
+          "sha256": "60cdd9d28023a9d236c0a2222f6fab1349b95a0e2da15212f1ce716353103a5d"
+        },
+        "nlms": {
+          "audio": "audio/car-0174-dt-clean/nlms.wav",
+          "spectrogram": "spectrograms/car-0174-dt-clean/nlms.png",
+          "metrics": {
+            "PESQ ↑": 2.31,
+            "ESTOI ↑": 0.855,
+            "tERLE (dB) ↑": 9.464,
+            "LSD (dB) ↓": 7.92
+          },
+          "sha256": "c4f9acee84aa9ddfbc203e4de413d4fc3e4ddd14d84097894028958df825a1d7"
+        },
+        "stft_kf": {
+          "audio": "audio/car-0174-dt-clean/stft_kf.wav",
+          "spectrogram": "spectrograms/car-0174-dt-clean/stft_kf.png",
+          "metrics": {
+            "PESQ ↑": 2.445,
+            "ESTOI ↑": 0.856,
+            "tERLE (dB) ↑": 13.25,
+            "LSD (dB) ↓": 7.514
+          },
+          "sha256": "f63cbb575b7a77c44487a6383e97e6b7973e193dddcb452c3405a1d8d2576020"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/car-0174-dt-clean/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/car-0174-dt-clean/hb_dnn_nlms.png",
+          "metrics": {
+            "PESQ ↑": 2.563,
+            "ESTOI ↑": 0.885,
+            "tERLE (dB) ↑": 6.352,
+            "LSD (dB) ↓": 7.112
+          },
+          "sha256": "196717ba613331addd1419bb32812f78c132e2df1b79bf21b089a597e68cc82e"
+        },
+        "meta_af": {
+          "audio": "audio/car-0174-dt-clean/meta_af.wav",
+          "spectrogram": "spectrograms/car-0174-dt-clean/meta_af.png",
+          "metrics": {
+            "PESQ ↑": 2.087,
+            "ESTOI ↑": 0.828,
+            "tERLE (dB) ↑": 1.649,
+            "LSD (dB) ↓": 8.055
+          },
+          "sha256": "a3793f2c14de0823d252d91dc8e40262ce92067f4f4b8d2b9ee88080e90acd0b"
+        },
+        "nkf": {
+          "audio": "audio/car-0174-dt-clean/nkf.wav",
+          "spectrogram": "spectrograms/car-0174-dt-clean/nkf.png",
+          "metrics": {
+            "PESQ ↑": 2.066,
+            "ESTOI ↑": 0.816,
+            "tERLE (dB) ↑": 1.351,
+            "LSD (dB) ↓": 7.786
+          },
+          "sha256": "2bb3a343d7b5e02d9b9e0c123f1a88e9259e629db869ea98195e6362b1a5bc4f"
+        },
+        "neural_mlms": {
+          "audio": "audio/car-0174-dt-clean/neural_mlms.wav",
+          "spectrogram": "spectrograms/car-0174-dt-clean/neural_mlms.png",
+          "metrics": {
+            "PESQ ↑": 2.565,
+            "ESTOI ↑": 0.879,
+            "tERLE (dB) ↑": 7.046,
+            "LSD (dB) ↓": 7.465
+          },
+          "sha256": "b56d2c48a373bc7b00b6d1a5ab68326d5f471df055fb01ed9d73d9205a128db0"
+        },
+        "pocket": {
+          "audio": "audio/car-0174-dt-clean/pocket.wav",
+          "spectrogram": "spectrograms/car-0174-dt-clean/pocket.png",
+          "metrics": {
+            "PESQ ↑": 2.862,
+            "ESTOI ↑": 0.892,
+            "tERLE (dB) ↑": 21.433,
+            "LSD (dB) ↓": 5.976
+          },
+          "sha256": "477d0be5f8a28d1c829bd07d3e16a24a3ccea7f0069ff0148914eb403dc5f6a5"
+        },
+        "target": {
+          "audio": "audio/car-0174-dt-clean/target.wav",
+          "spectrogram": "spectrograms/car-0174-dt-clean/target.png",
+          "metrics": {},
+          "sha256": "e2d109cd6054637eaa50f167f6144d7dc50978176a652858ef966ac817bc6f27"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 13.14 dB.",
+      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise.",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
+        "Original sample ID": "weilai_test_00043"
+      }
+    },
+    {
+      "id": "blind-02-dt",
+      "title": "Example 06 — Double-talk · movement",
+      "dataset": "AEC Challenge real",
+      "scenario": "DT · movement",
+      "duration": 11.988,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/blind-02-dt/input.wav",
+          "spectrogram": "spectrograms/blind-02-dt/input.png",
+          "metrics": {},
+          "sha256": "6a7fe87520adcea623b756d063488f19b274710943290b267245824b83171778"
+        },
+        "nlms": {
+          "audio": "audio/blind-02-dt/nlms.wav",
+          "spectrogram": "spectrograms/blind-02-dt/nlms.png",
+          "metrics": {
+            "AECMOS Echo ↑": 1.765,
+            "AECMOS Other ↑": 4.029
+          },
+          "sha256": "cd7b6e6b21113d2d0c9010bfe3c746e66fff5c3d102a5feee6201d826beeb194"
+        },
+        "stft_kf": {
+          "audio": "audio/blind-02-dt/stft_kf.wav",
+          "spectrogram": "spectrograms/blind-02-dt/stft_kf.png",
+          "metrics": {
+            "AECMOS Echo ↑": 3.919,
+            "AECMOS Other ↑": 4.048
+          },
+          "sha256": "c854cab76995dea1f0b06f0b4661a396f39979f04abf2edbfb0202339d930812"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/blind-02-dt/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/blind-02-dt/hb_dnn_nlms.png",
+          "metrics": {
+            "AECMOS Echo ↑": 3.236,
+            "AECMOS Other ↑": 4.127
+          },
+          "sha256": "90819f9095b95d1585ffe846183a98badcbaaf25ca89ac9110ea9c329f831130"
+        },
+        "meta_af": {
+          "audio": "audio/blind-02-dt/meta_af.wav",
+          "spectrogram": "spectrograms/blind-02-dt/meta_af.png",
+          "metrics": {
+            "AECMOS Echo ↑": 1.986,
+            "AECMOS Other ↑": 3.88
+          },
+          "sha256": "b0fa74b7b9b3fd9b22e68a22ff012ce89a3ba80f0c1bcd9a5c0b3c4a4fff7ab3"
+        },
+        "nkf": {
+          "audio": "audio/blind-02-dt/nkf.wav",
+          "spectrogram": "spectrograms/blind-02-dt/nkf.png",
+          "metrics": {
+            "AECMOS Echo ↑": 4.151,
+            "AECMOS Other ↑": 4.076
+          },
+          "sha256": "25549b95d69e121095adb8b68cd7bd6b9a1f9505b84fa9a029053e2e44816548"
+        },
+        "neural_mlms": {
+          "audio": "audio/blind-02-dt/neural_mlms.wav",
+          "spectrogram": "spectrograms/blind-02-dt/neural_mlms.png",
+          "metrics": {
+            "AECMOS Echo ↑": 2.833,
+            "AECMOS Other ↑": 4.032
+          },
+          "sha256": "4ac5efc50c723e118eb4d14b529c4cae5d1fc2ba360e4480a37c587692dc2cc5"
+        },
+        "pocket": {
+          "audio": "audio/blind-02-dt/pocket.wav",
+          "spectrogram": "spectrograms/blind-02-dt/pocket.png",
+          "metrics": {
+            "AECMOS Echo ↑": 4.356,
+            "AECMOS Other ↑": 4.206
+          },
+          "sha256": "e4d9d8671d013385037e36b7bd761308d77cac8f5951b636f259a4d950b1a85a"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [26.988, 38.976) s; common playback gain 3.81 dB.",
+      "source": "ICASSP 2023 AEC Challenge blind real-world test recordings.",
+      "provenance": {
+        "Metric interval": "AECMOS evaluated on [26.988, 38.976) s, before the common playback gain.",
+        "Original sample ID": "7a7e17f5-1e38-4e02-aa4c-bd53dfaef154_doubletalk-with-movement",
+        "Reference alignment": "Shared GCC-PHAT estimate from the first 10 s: 73.875 ms. Original loopback supplied to AECMOS.",
+        "Inference context": "Full recording processed before extracting the excerpt."
+      }
+    },
+    {
+      "id": "blind-04-dt",
+      "title": "Example 07 — Double-talk · movement",
+      "dataset": "AEC Challenge real",
+      "scenario": "DT · movement",
+      "duration": 11.94,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/blind-04-dt/input.wav",
+          "spectrogram": "spectrograms/blind-04-dt/input.png",
+          "metrics": {},
+          "sha256": "acd2c5153348a6949243b5a311ff04f4d334149f53ea9471bc491922bb758e93"
+        },
+        "nlms": {
+          "audio": "audio/blind-04-dt/nlms.wav",
+          "spectrogram": "spectrograms/blind-04-dt/nlms.png",
+          "metrics": {
+            "AECMOS Echo ↑": 2.307,
+            "AECMOS Other ↑": 3.975
+          },
+          "sha256": "b031ede33845c7ec5de3e03c83f45aaf663711ca92a1777e6c214eecfb4992cd"
+        },
+        "stft_kf": {
+          "audio": "audio/blind-04-dt/stft_kf.wav",
+          "spectrogram": "spectrograms/blind-04-dt/stft_kf.png",
+          "metrics": {
+            "AECMOS Echo ↑": 3.813,
+            "AECMOS Other ↑": 3.999
+          },
+          "sha256": "dd629a618adf0fe4d0e18499a109fb150619af2366c5521741c5a41d53f6171b"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/blind-04-dt/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/blind-04-dt/hb_dnn_nlms.png",
+          "metrics": {
+            "AECMOS Echo ↑": 3.601,
+            "AECMOS Other ↑": 3.925
+          },
+          "sha256": "8613f34e1dc23ea6ea6276932e619a00c809fb9a016e7f7e0f4d4b291c80597c"
+        },
+        "meta_af": {
+          "audio": "audio/blind-04-dt/meta_af.wav",
+          "spectrogram": "spectrograms/blind-04-dt/meta_af.png",
+          "metrics": {
+            "AECMOS Echo ↑": 2.773,
+            "AECMOS Other ↑": 3.818
+          },
+          "sha256": "f2c91f78e7bd93484f191d2ed216fe237ee2675ed0e2710af6696fb9d10d730c"
+        },
+        "nkf": {
+          "audio": "audio/blind-04-dt/nkf.wav",
+          "spectrogram": "spectrograms/blind-04-dt/nkf.png",
+          "metrics": {
+            "AECMOS Echo ↑": 3.923,
+            "AECMOS Other ↑": 4.045
+          },
+          "sha256": "3b2565aed5b7f3af3c162eec0c5724b1fe3d7b939ae39f96fb85e9529820d5be"
+        },
+        "neural_mlms": {
+          "audio": "audio/blind-04-dt/neural_mlms.wav",
+          "spectrogram": "spectrograms/blind-04-dt/neural_mlms.png",
+          "metrics": {
+            "AECMOS Echo ↑": 2.654,
+            "AECMOS Other ↑": 3.759
+          },
+          "sha256": "cbcbcdf92ec635192976378bc1d87ad39ee4a06adca1a1288244a9899b9a9176"
+        },
+        "pocket": {
+          "audio": "audio/blind-04-dt/pocket.wav",
+          "spectrogram": "spectrograms/blind-04-dt/pocket.png",
+          "metrics": {
+            "AECMOS Echo ↑": 4.16,
+            "AECMOS Other ↑": 4.056
+          },
+          "sha256": "25196628bc43cdfb88c810d48143b4b0afa53af93103782d1030f48d580c749b"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [26.940, 38.880) s; common playback gain -0.53 dB.",
+      "source": "ICASSP 2023 AEC Challenge blind real-world test recordings.",
+      "provenance": {
+        "Metric interval": "AECMOS evaluated on [26.940, 38.880) s, before the common playback gain.",
+        "Original sample ID": "3e6lVI5h9UeSlRekiZb9gw_doubletalk-with-movement",
+        "Reference alignment": "Shared GCC-PHAT estimate from the first 10 s: 72.938 ms. Original loopback supplied to AECMOS.",
+        "Inference context": "Full recording processed before extracting the excerpt."
+      }
+    },
+    {
+      "id": "blind-03-dt",
+      "title": "Example 08 — Double-talk · real recording",
+      "dataset": "AEC Challenge real",
+      "scenario": "DT · real recording",
+      "duration": 11.94,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/blind-03-dt/input.wav",
+          "spectrogram": "spectrograms/blind-03-dt/input.png",
+          "metrics": {},
+          "sha256": "5bd7b1b9257fb52bf8fba0bea06e588d5e3d6ecd28f46a361c1f3ebf0085d621"
+        },
+        "nlms": {
+          "audio": "audio/blind-03-dt/nlms.wav",
+          "spectrogram": "spectrograms/blind-03-dt/nlms.png",
+          "metrics": {
+            "AECMOS Echo ↑": 3.359,
+            "AECMOS Other ↑": 3.768
+          },
+          "sha256": "cd02b08199194171d3741c0c08e8a8a1d2f117eed9b0a3209d66af189fbbd0fc"
+        },
+        "stft_kf": {
+          "audio": "audio/blind-03-dt/stft_kf.wav",
+          "spectrogram": "spectrograms/blind-03-dt/stft_kf.png",
+          "metrics": {
+            "AECMOS Echo ↑": 4.181,
+            "AECMOS Other ↑": 3.922
+          },
+          "sha256": "993f18193a2b225eaf34637916ac6225c6b3977484b43cf9ffa37231b691f135"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/blind-03-dt/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/blind-03-dt/hb_dnn_nlms.png",
+          "metrics": {
+            "AECMOS Echo ↑": 4.136,
+            "AECMOS Other ↑": 3.961
+          },
+          "sha256": "76a595355e742598f44f298c0ff83beeb160f7ee1011561e55d4173e11ea04fe"
+        },
+        "meta_af": {
+          "audio": "audio/blind-03-dt/meta_af.wav",
+          "spectrogram": "spectrograms/blind-03-dt/meta_af.png",
+          "metrics": {
+            "AECMOS Echo ↑": 3.22,
+            "AECMOS Other ↑": 3.372
+          },
+          "sha256": "68db6fc63b191599edc6b46d93258f06f249104be83f794802bfe0f74d0309e8"
+        },
+        "nkf": {
+          "audio": "audio/blind-03-dt/nkf.wav",
+          "spectrogram": "spectrograms/blind-03-dt/nkf.png",
+          "metrics": {
+            "AECMOS Echo ↑": 4.213,
+            "AECMOS Other ↑": 3.941
+          },
+          "sha256": "5fbf70d65eead0a4dcc54ee04ab9e40a3680de2af1566823fc0984977364b6e1"
+        },
+        "neural_mlms": {
+          "audio": "audio/blind-03-dt/neural_mlms.wav",
+          "spectrogram": "spectrograms/blind-03-dt/neural_mlms.png",
+          "metrics": {
+            "AECMOS Echo ↑": 2.564,
+            "AECMOS Other ↑": 3.861
+          },
+          "sha256": "267dfd1f90d5f7a7cdde7d64afcf142bac3cd0048778ae74b8d0fa2e27b67a71"
+        },
+        "pocket": {
+          "audio": "audio/blind-03-dt/pocket.wav",
+          "spectrogram": "spectrograms/blind-03-dt/pocket.png",
+          "metrics": {
+            "AECMOS Echo ↑": 4.484,
+            "AECMOS Other ↑": 4.03
+          },
+          "sha256": "49196adf900ced97f93bf1362c59910aa1815968103212a7f4845994baa3f1d3"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [26.940, 38.880) s; common playback gain 9.41 dB.",
+      "source": "ICASSP 2023 AEC Challenge blind real-world test recordings.",
+      "provenance": {
+        "Metric interval": "AECMOS evaluated on [26.940, 38.880) s, before the common playback gain.",
+        "Original sample ID": "2ubChTJUJUaBGSJZ048spA_doubletalk",
+        "Reference alignment": "Shared GCC-PHAT estimate from the first 10 s: 36.000 ms. Original loopback supplied to AECMOS.",
+        "Inference context": "Full recording processed before extracting the excerpt."
+      }
+    },
+    {
+      "id": "blind-05-fs",
+      "title": "Example 09 — Far-end single-talk · real recording",
+      "dataset": "AEC Challenge real",
+      "scenario": "FS · real recording",
+      "duration": 12,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/blind-05-fs/input.wav",
+          "spectrogram": "spectrograms/blind-05-fs/input.png",
+          "metrics": {},
+          "sha256": "8106376e598f0fd1d02593de2b28c9dc695e7962857762ebeafc23c12795c383"
+        },
+        "nlms": {
+          "audio": "audio/blind-05-fs/nlms.wav",
+          "spectrogram": "spectrograms/blind-05-fs/nlms.png",
+          "metrics": {
+            "AECMOS Echo ↑": 1.534
+          },
+          "sha256": "53b66aaf0d5398d879ef5903371a127f83417ea569f930110f3d40193449a102"
+        },
+        "stft_kf": {
+          "audio": "audio/blind-05-fs/stft_kf.wav",
+          "spectrogram": "spectrograms/blind-05-fs/stft_kf.png",
+          "metrics": {
+            "AECMOS Echo ↑": 2.475
+          },
+          "sha256": "886e498ff75361b8e2fa8d44b10dd540b92adbf02ae5eb42a7742016bbd825a5"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/blind-05-fs/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/blind-05-fs/hb_dnn_nlms.png",
+          "metrics": {
+            "AECMOS Echo ↑": 1.554
+          },
+          "sha256": "af05a77920de6ca1b8f8f684953658f6c6d01d214f90756712757b30f44864fe"
+        },
+        "meta_af": {
+          "audio": "audio/blind-05-fs/meta_af.wav",
+          "spectrogram": "spectrograms/blind-05-fs/meta_af.png",
+          "metrics": {
+            "AECMOS Echo ↑": 2.509
+          },
+          "sha256": "8b89ae1328fc94c48af415e636e930da47cd1a0104cb422e557026943ff3db70"
+        },
+        "nkf": {
+          "audio": "audio/blind-05-fs/nkf.wav",
+          "spectrogram": "spectrograms/blind-05-fs/nkf.png",
+          "metrics": {
+            "AECMOS Echo ↑": 1.564
+          },
+          "sha256": "a28b9e9e36b1f6951d734f7562c15ebbacf9e2bee02c43aa2678130075b78826"
+        },
+        "neural_mlms": {
+          "audio": "audio/blind-05-fs/neural_mlms.wav",
+          "spectrogram": "spectrograms/blind-05-fs/neural_mlms.png",
+          "metrics": {
+            "AECMOS Echo ↑": 2.176
+          },
+          "sha256": "063858e055e153aa56cca4357a464242707ba28129ea3fa472d13acbb52d7892"
+        },
+        "pocket": {
+          "audio": "audio/blind-05-fs/pocket.wav",
+          "spectrogram": "spectrograms/blind-05-fs/pocket.png",
+          "metrics": {
+            "AECMOS Echo ↑": 3.927
+          },
+          "sha256": "9e9193b445e5f7cdcbefa83260426659600514327c4138a910fc9369f69f53b9"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [12.000, 24.000) s; common playback gain -7.00 dB.",
+      "source": "ICASSP 2023 AEC Challenge blind real-world test recordings.",
+      "provenance": {
+        "Metric interval": "AECMOS evaluated on [12.000, 24.000) s, before the common playback gain.",
+        "Original sample ID": "11831959-16d3-4240-b4d7-6c3f19936718_farend-singletalk",
+        "Reference alignment": "Shared GCC-PHAT estimate from the first 10 s: 229.875 ms. Original loopback supplied to AECMOS.",
+        "Inference context": "Full recording processed before extracting the excerpt."
+      }
+    },
+    {
+      "id": "blind-06-fs",
+      "title": "Example 10 — Far-end single-talk · real recording",
+      "dataset": "AEC Challenge real",
+      "scenario": "FS · real recording",
+      "duration": 12,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/blind-06-fs/input.wav",
+          "spectrogram": "spectrograms/blind-06-fs/input.png",
+          "metrics": {},
+          "sha256": "c95abf826ecc181f6763beaee740023585565795fc849335f989b7d3add5e71a"
+        },
+        "nlms": {
+          "audio": "audio/blind-06-fs/nlms.wav",
+          "spectrogram": "spectrograms/blind-06-fs/nlms.png",
+          "metrics": {
+            "AECMOS Echo ↑": 3.344
+          },
+          "sha256": "b64d28ef37bf834968768266b69ec9dacf1643caf25eaeb01a79f1b286248e92"
+        },
+        "stft_kf": {
+          "audio": "audio/blind-06-fs/stft_kf.wav",
+          "spectrogram": "spectrograms/blind-06-fs/stft_kf.png",
+          "metrics": {
+            "AECMOS Echo ↑": 3.635
+          },
+          "sha256": "8f23003c061523edae1a7fbc8a385b42d66c85f97a5eaa117293b225e080e8c7"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/blind-06-fs/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/blind-06-fs/hb_dnn_nlms.png",
+          "metrics": {
+            "AECMOS Echo ↑": 2.677
+          },
+          "sha256": "b20373089a844ae110deb055f45cb1287f51243668d44493e737e0474a00d8a8"
+        },
+        "meta_af": {
+          "audio": "audio/blind-06-fs/meta_af.wav",
+          "spectrogram": "spectrograms/blind-06-fs/meta_af.png",
+          "metrics": {
+            "AECMOS Echo ↑": 2.123
+          },
+          "sha256": "a67b95a90c7fa2feb700754666ed93bec7d75fac275afb5c6e0cbcebd899f18c"
+        },
+        "nkf": {
+          "audio": "audio/blind-06-fs/nkf.wav",
+          "spectrogram": "spectrograms/blind-06-fs/nkf.png",
+          "metrics": {
+            "AECMOS Echo ↑": 1.682
+          },
+          "sha256": "00e27b4fb305095498f32da3c8da424bb155dc9924cba339fb87dd7292098693"
+        },
+        "neural_mlms": {
+          "audio": "audio/blind-06-fs/neural_mlms.wav",
+          "spectrogram": "spectrograms/blind-06-fs/neural_mlms.png",
+          "metrics": {
+            "AECMOS Echo ↑": 1.977
+          },
+          "sha256": "7711cc174ba8eed03855b3359a7d5b50cbb82c5a68c491f856724010d48d932d"
+        },
+        "pocket": {
+          "audio": "audio/blind-06-fs/pocket.wav",
+          "spectrogram": "spectrograms/blind-06-fs/pocket.png",
+          "metrics": {
+            "AECMOS Echo ↑": 4.539
+          },
+          "sha256": "2e929b8512c0a2ab172d2518c3f647d1206241797073a09515f14032ca436f23"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [12.000, 24.000) s; common playback gain -6.68 dB.",
+      "source": "ICASSP 2023 AEC Challenge blind real-world test recordings.",
+      "provenance": {
+        "Metric interval": "AECMOS evaluated on [12.000, 24.000) s, before the common playback gain.",
+        "Original sample ID": "2b546bf4-5b3f-4b07-8675-a8940491fc03_farend-singletalk",
+        "Reference alignment": "Shared GCC-PHAT estimate from the first 10 s: 241.750 ms. Original loopback supplied to AECMOS.",
+        "Inference context": "Full recording processed before extracting the excerpt."
+      }
+    },
+    {
+      "id": "native-0047-dt",
+      "title": "Example 11 — Double-talk",
+      "dataset": "AEC Challenge synthetic",
+      "scenario": "DT",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/native-0047-dt/input.wav",
+          "spectrogram": "spectrograms/native-0047-dt/input.png",
+          "metrics": {
+            "PESQ ↑": 1.448,
+            "ESTOI ↑": 0.787,
+            "tERLE (dB) ↑": 0,
+            "LSD (dB) ↓": 4.966
+          },
+          "sha256": "0d9c87503e5e5afb50530eff17477c3fec944ed659841758b422c93c42275611"
+        },
+        "nlms": {
+          "audio": "audio/native-0047-dt/nlms.wav",
+          "spectrogram": "spectrograms/native-0047-dt/nlms.png",
+          "metrics": {
+            "PESQ ↑": 1.047,
+            "ESTOI ↑": 0.644,
+            "tERLE (dB) ↑": -9.303,
+            "LSD (dB) ↓": 6.385
+          },
+          "sha256": "bef310cbb29c2806d825647f957eea9320e786b12e05fae693b5ddeca54605cc"
+        },
+        "stft_kf": {
+          "audio": "audio/native-0047-dt/stft_kf.wav",
+          "spectrogram": "spectrograms/native-0047-dt/stft_kf.png",
+          "metrics": {
+            "PESQ ↑": 3.397,
+            "ESTOI ↑": 0.893,
+            "tERLE (dB) ↑": 11.764,
+            "LSD (dB) ↓": 4.419
+          },
+          "sha256": "4ecc0c922d8162209da1ea211b0f51e0980eb0f052039844173b438049d143c8"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/native-0047-dt/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/native-0047-dt/hb_dnn_nlms.png",
+          "metrics": {
+            "PESQ ↑": 3.625,
+            "ESTOI ↑": 0.958,
+            "tERLE (dB) ↑": 13.563,
+            "LSD (dB) ↓": 3.524
+          },
+          "sha256": "f63ae32c1bd1cf3da9a8b2cea6bfea865a4dea38118a87c6629ca23b2aa58c01"
+        },
+        "meta_af": {
+          "audio": "audio/native-0047-dt/meta_af.wav",
+          "spectrogram": "spectrograms/native-0047-dt/meta_af.png",
+          "metrics": {
+            "PESQ ↑": 2.784,
+            "ESTOI ↑": 0.892,
+            "tERLE (dB) ↑": 6.53,
+            "LSD (dB) ↓": 5.002
+          },
+          "sha256": "17113f96050ac3b1d2960e2ac9687e39e929cb17d3cf137b893d76f96e401041"
+        },
+        "nkf": {
+          "audio": "audio/native-0047-dt/nkf.wav",
+          "spectrogram": "spectrograms/native-0047-dt/nkf.png",
+          "metrics": {
+            "PESQ ↑": 1.38,
+            "ESTOI ↑": 0.68,
+            "tERLE (dB) ↑": 2.292,
+            "LSD (dB) ↓": 6.692
+          },
+          "sha256": "c90a7210201e1ad04144270be42f42b0a5263d035a8417eacdac3d04c447cc1a"
+        },
+        "neural_mlms": {
+          "audio": "audio/native-0047-dt/neural_mlms.wav",
+          "spectrogram": "spectrograms/native-0047-dt/neural_mlms.png",
+          "metrics": {
+            "PESQ ↑": 1.358,
+            "ESTOI ↑": 0.773,
+            "tERLE (dB) ↑": 2.112,
+            "LSD (dB) ↓": 5.524
+          },
+          "sha256": "591b5f1ac4161e7d7b6583fff824ac8541a6978eaa7543c76aa88678819a46dc"
+        },
+        "pocket": {
+          "audio": "audio/native-0047-dt/pocket.wav",
+          "spectrogram": "spectrograms/native-0047-dt/pocket.png",
+          "metrics": {
+            "PESQ ↑": 3.855,
+            "ESTOI ↑": 0.955,
+            "tERLE (dB) ↑": 15.086,
+            "LSD (dB) ↓": 2.978
+          },
+          "sha256": "5adf302216ee5121a5c3abe497953e44f69afd8031189eabd5515625ff28a9f2"
+        },
+        "target": {
+          "audio": "audio/native-0047-dt/target.wav",
+          "spectrogram": "spectrograms/native-0047-dt/target.png",
+          "metrics": {},
+          "sha256": "71c3e8ad7927416db261b4fcc232a4bde7d446e4250bbc0c9a59d9580d18e7d0"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 7.22 dB.",
+      "source": "ICASSP 2022 AEC Challenge fullband synthetic dataset, processed at 16 kHz.",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
+        "Original sample ID": "f00161_mic"
+      }
+    },
+    {
+      "id": "native-0109-dt",
+      "title": "Example 12 — Double-talk",
+      "dataset": "AEC Challenge synthetic",
+      "scenario": "DT",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/native-0109-dt/input.wav",
+          "spectrogram": "spectrograms/native-0109-dt/input.png",
+          "metrics": {
+            "PESQ ↑": 1.612,
+            "ESTOI ↑": 0.831,
+            "tERLE (dB) ↑": 0,
+            "LSD (dB) ↓": 14.593
+          },
+          "sha256": "5d87fc0263eb44945bd1b8b83b34e3b205684895d875d3911c8c5448552a810e"
+        },
+        "nlms": {
+          "audio": "audio/native-0109-dt/nlms.wav",
+          "spectrogram": "spectrograms/native-0109-dt/nlms.png",
+          "metrics": {
+            "PESQ ↑": 1.26,
+            "ESTOI ↑": 0.622,
+            "tERLE (dB) ↑": -10.514,
+            "LSD (dB) ↓": 9.878
+          },
+          "sha256": "5d1db696a51629aaa39e2739a65f174d77bae28e750e81d41f703e57a8be71ad"
+        },
+        "stft_kf": {
+          "audio": "audio/native-0109-dt/stft_kf.wav",
+          "spectrogram": "spectrograms/native-0109-dt/stft_kf.png",
+          "metrics": {
+            "PESQ ↑": 2.098,
+            "ESTOI ↑": 0.783,
+            "tERLE (dB) ↑": -0.939,
+            "LSD (dB) ↓": 6.125
+          },
+          "sha256": "a8a6ac7e87161fe3bcb3fc6d349f89bf897a5ef039fa596127bfd5c603aaba3a"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/native-0109-dt/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/native-0109-dt/hb_dnn_nlms.png",
+          "metrics": {
+            "PESQ ↑": 3.78,
+            "ESTOI ↑": 0.938,
+            "tERLE (dB) ↑": 16.319,
+            "LSD (dB) ↓": 4.457
+          },
+          "sha256": "01b1974d00621d901c6d03a5302e54304cf1a457fe4210897c4eec9826d2a49c"
+        },
+        "meta_af": {
+          "audio": "audio/native-0109-dt/meta_af.wav",
+          "spectrogram": "spectrograms/native-0109-dt/meta_af.png",
+          "metrics": {
+            "PESQ ↑": 3.046,
+            "ESTOI ↑": 0.893,
+            "tERLE (dB) ↑": 4.128,
+            "LSD (dB) ↓": 4.925
+          },
+          "sha256": "0a6424d5d4d310cf7e6776b33368e3fd46afb3b563cbc2902492076488d63523"
+        },
+        "nkf": {
+          "audio": "audio/native-0109-dt/nkf.wav",
+          "spectrogram": "spectrograms/native-0109-dt/nkf.png",
+          "metrics": {
+            "PESQ ↑": 1.937,
+            "ESTOI ↑": 0.789,
+            "tERLE (dB) ↑": -4.474,
+            "LSD (dB) ↓": 4.277
+          },
+          "sha256": "b532097d74fb80f867cc3b556b8dabadcfacfdd241f41c0463c93d6be46d3d7b"
+        },
+        "neural_mlms": {
+          "audio": "audio/native-0109-dt/neural_mlms.wav",
+          "spectrogram": "spectrograms/native-0109-dt/neural_mlms.png",
+          "metrics": {
+            "PESQ ↑": 2.307,
+            "ESTOI ↑": 0.862,
+            "tERLE (dB) ↑": 5.106,
+            "LSD (dB) ↓": 9.374
+          },
+          "sha256": "f31d9bf35178400ea1684fea801b17543e003abd2fff2433a0560cd993c31e74"
+        },
+        "pocket": {
+          "audio": "audio/native-0109-dt/pocket.wav",
+          "spectrogram": "spectrograms/native-0109-dt/pocket.png",
+          "metrics": {
+            "PESQ ↑": 4.189,
+            "ESTOI ↑": 0.945,
+            "tERLE (dB) ↑": 14.837,
+            "LSD (dB) ↓": 3.245
+          },
+          "sha256": "bc8c5cefb30f8ce328872fb6f7cc0405b24dea64fbe5ae3bea754bf8cd768412"
+        },
+        "target": {
+          "audio": "audio/native-0109-dt/target.wav",
+          "spectrogram": "spectrograms/native-0109-dt/target.png",
+          "metrics": {},
+          "sha256": "fb78f9d36a075e09cc8e70c0d9a99fe19193a72d3bd4f5be1de66d1b18c55e7e"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 20.85 dB.",
+      "source": "ICASSP 2022 AEC Challenge fullband synthetic dataset, processed at 16 kHz.",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
+        "Original sample ID": "f08501_mic"
+      }
+    },
+    {
+      "id": "native-0173-dt",
+      "title": "Example 13 — Double-talk",
+      "dataset": "AEC Challenge synthetic",
+      "scenario": "DT",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/native-0173-dt/input.wav",
+          "spectrogram": "spectrograms/native-0173-dt/input.png",
+          "metrics": {
+            "PESQ ↑": 3.707,
+            "ESTOI ↑": 0.993,
+            "tERLE (dB) ↑": 0,
+            "LSD (dB) ↓": 3.112
+          },
+          "sha256": "d508539e70bb74111b60995d2074fd9dcca40c8302127b018466faed2d6646a1"
+        },
+        "nlms": {
+          "audio": "audio/native-0173-dt/nlms.wav",
+          "spectrogram": "spectrograms/native-0173-dt/nlms.png",
+          "metrics": {
+            "PESQ ↑": 1.509,
+            "ESTOI ↑": 0.75,
+            "tERLE (dB) ↑": -28.971,
+            "LSD (dB) ↓": 9.213
+          },
+          "sha256": "04476a24aafc334bb4e6284e7187c23d0ab2bb97acb522745f75c5458753f34f"
+        },
+        "stft_kf": {
+          "audio": "audio/native-0173-dt/stft_kf.wav",
+          "spectrogram": "spectrograms/native-0173-dt/stft_kf.png",
+          "metrics": {
+            "PESQ ↑": 1.917,
+            "ESTOI ↑": 0.856,
+            "tERLE (dB) ↑": -21.913,
+            "LSD (dB) ↓": 5.856
+          },
+          "sha256": "204a81aa047d40958215ee02ad8853d87287641d9b5b961a93fe0cdf9d04dfb8"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/native-0173-dt/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/native-0173-dt/hb_dnn_nlms.png",
+          "metrics": {
+            "PESQ ↑": 3.824,
+            "ESTOI ↑": 0.997,
+            "tERLE (dB) ↑": 0.731,
+            "LSD (dB) ↓": 2.448
+          },
+          "sha256": "e04467e3ec81629b91ba0acde8f8989b8870e67aa8f68a51424ff37455dffdde"
+        },
+        "meta_af": {
+          "audio": "audio/native-0173-dt/meta_af.wav",
+          "spectrogram": "spectrograms/native-0173-dt/meta_af.png",
+          "metrics": {
+            "PESQ ↑": 3.438,
+            "ESTOI ↑": 0.987,
+            "tERLE (dB) ↑": -2.908,
+            "LSD (dB) ↓": 3.371
+          },
+          "sha256": "f7f431705a0620561d32b67cf9f2ba6b3bf1383552e79a86bf56f6bb72a2ddfb"
+        },
+        "nkf": {
+          "audio": "audio/native-0173-dt/nkf.wav",
+          "spectrogram": "spectrograms/native-0173-dt/nkf.png",
+          "metrics": {
+            "PESQ ↑": 3.036,
+            "ESTOI ↑": 0.925,
+            "tERLE (dB) ↑": -13.879,
+            "LSD (dB) ↓": 4.06
+          },
+          "sha256": "fdd28ef460a76ff67f739835a44d2ea953ebbf37a1ddb393349796d97aff88fc"
+        },
+        "neural_mlms": {
+          "audio": "audio/native-0173-dt/neural_mlms.wav",
+          "spectrogram": "spectrograms/native-0173-dt/neural_mlms.png",
+          "metrics": {
+            "PESQ ↑": 2.607,
+            "ESTOI ↑": 0.947,
+            "tERLE (dB) ↑": -14.371,
+            "LSD (dB) ↓": 4.622
+          },
+          "sha256": "3c265dbbb00876382ba5fda7aa0c5806d7c0e66c00e5a91aa94b3fd703e23027"
+        },
+        "pocket": {
+          "audio": "audio/native-0173-dt/pocket.wav",
+          "spectrogram": "spectrograms/native-0173-dt/pocket.png",
+          "metrics": {
+            "PESQ ↑": 4.292,
+            "ESTOI ↑": 0.999,
+            "tERLE (dB) ↑": 4.519,
+            "LSD (dB) ↓": 1.592
+          },
+          "sha256": "b4ea3b040ae3202c098da6e1f4dec848d62193c12ef4542b75e6e9397e4d91e4"
+        },
+        "target": {
+          "audio": "audio/native-0173-dt/target.wav",
+          "spectrogram": "spectrograms/native-0173-dt/target.png",
+          "metrics": {},
+          "sha256": "eac86851b558b34c996eea4d001cd0244f738c0ab2fc69b2825bacc14ddf3015"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 21.61 dB.",
+      "source": "ICASSP 2022 AEC Challenge fullband synthetic dataset, processed at 16 kHz.",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
+        "Original sample ID": "f00956_mic"
+      }
+    },
+    {
+      "id": "native-0224-dt",
+      "title": "Example 14 — Double-talk",
+      "dataset": "AEC Challenge synthetic",
+      "scenario": "DT",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/native-0224-dt/input.wav",
+          "spectrogram": "spectrograms/native-0224-dt/input.png",
+          "metrics": {
+            "PESQ ↑": 1.701,
+            "ESTOI ↑": 0.826,
+            "tERLE (dB) ↑": 0,
+            "LSD (dB) ↓": 16.101
+          },
+          "sha256": "05442d2a8bc6c31cadb8161ee1ee539ab56e9af1468cabd1cf0057b5d07aff8a"
+        },
+        "nlms": {
+          "audio": "audio/native-0224-dt/nlms.wav",
+          "spectrogram": "spectrograms/native-0224-dt/nlms.png",
+          "metrics": {
+            "PESQ ↑": 1.239,
+            "ESTOI ↑": 0.637,
+            "tERLE (dB) ↑": -17.815,
+            "LSD (dB) ↓": 9.445
+          },
+          "sha256": "6b5d84ca4dd8d9bbc712f3e467d7af385c405ffe85d00f5b06c6cbca43638799"
+        },
+        "stft_kf": {
+          "audio": "audio/native-0224-dt/stft_kf.wav",
+          "spectrogram": "spectrograms/native-0224-dt/stft_kf.png",
+          "metrics": {
+            "PESQ ↑": 2.742,
+            "ESTOI ↑": 0.872,
+            "tERLE (dB) ↑": 7.399,
+            "LSD (dB) ↓": 5.653
+          },
+          "sha256": "bfcd1fd3ebdf1df4c6279adf5f1078ca5fe83713075c72885dfc94b1c5ea41b9"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/native-0224-dt/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/native-0224-dt/hb_dnn_nlms.png",
+          "metrics": {
+            "PESQ ↑": 3.552,
+            "ESTOI ↑": 0.947,
+            "tERLE (dB) ↑": 14.714,
+            "LSD (dB) ↓": 5.555
+          },
+          "sha256": "bf4b88be9374e856ad2038effc87443a5c5074836e9555ef79d8b3cf312b6c81"
+        },
+        "meta_af": {
+          "audio": "audio/native-0224-dt/meta_af.wav",
+          "spectrogram": "spectrograms/native-0224-dt/meta_af.png",
+          "metrics": {
+            "PESQ ↑": 2.419,
+            "ESTOI ↑": 0.826,
+            "tERLE (dB) ↑": 0.043,
+            "LSD (dB) ↓": 8.392
+          },
+          "sha256": "4f52a8ca08783b5b01bf1e28ef16db9856ca0cb3891c56ad849e4367604d3c7a"
+        },
+        "nkf": {
+          "audio": "audio/native-0224-dt/nkf.wav",
+          "spectrogram": "spectrograms/native-0224-dt/nkf.png",
+          "metrics": {
+            "PESQ ↑": 1.453,
+            "ESTOI ↑": 0.664,
+            "tERLE (dB) ↑": -29.536,
+            "LSD (dB) ↓": 12.532
+          },
+          "sha256": "04cf0561fa8fdb24aedc8a334843f9af9077d8c3e4aef4f8ca617ba38d57673c"
+        },
+        "neural_mlms": {
+          "audio": "audio/native-0224-dt/neural_mlms.wav",
+          "spectrogram": "spectrograms/native-0224-dt/neural_mlms.png",
+          "metrics": {
+            "PESQ ↑": 1.954,
+            "ESTOI ↑": 0.807,
+            "tERLE (dB) ↑": 0.544,
+            "LSD (dB) ↓": 13.825
+          },
+          "sha256": "06e69e97d14a342408b423fb9684451ccb84ea1e25c3c8fe313e2c79541ae774"
+        },
+        "pocket": {
+          "audio": "audio/native-0224-dt/pocket.wav",
+          "spectrogram": "spectrograms/native-0224-dt/pocket.png",
+          "metrics": {
+            "PESQ ↑": 3.854,
+            "ESTOI ↑": 0.948,
+            "tERLE (dB) ↑": 11.529,
+            "LSD (dB) ↓": 3.338
+          },
+          "sha256": "000544f01868a02c34f49f5318637b05d4a3de82b23a4b16d97a93035c04e54d"
+        },
+        "target": {
+          "audio": "audio/native-0224-dt/target.wav",
+          "spectrogram": "spectrograms/native-0224-dt/target.png",
+          "metrics": {},
+          "sha256": "9ea15e33765bf6d7eee83ceaf500fe74d234992d75fefb335967e99ec5f677cb"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 12.23 dB.",
+      "source": "ICASSP 2022 AEC Challenge fullband synthetic dataset, processed at 16 kHz.",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
+        "Original sample ID": "f06627_mic"
+      }
+    },
+    {
+      "id": "native-0060-fs",
+      "title": "Example 15 — Far-end single-talk",
+      "dataset": "AEC Challenge synthetic",
+      "scenario": "FS",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/native-0060-fs/input.wav",
+          "spectrogram": "spectrograms/native-0060-fs/input.png",
+          "metrics": {
+            "ERLE (dB) ↑": 0
+          },
+          "sha256": "fd936d9eaddf003769cebce29b1612c2e71192cedfdf27383882f2b67e88b35b"
+        },
+        "nlms": {
+          "audio": "audio/native-0060-fs/nlms.wav",
+          "spectrogram": "spectrograms/native-0060-fs/nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": -2.754
+          },
+          "sha256": "4cb888a16b55dcd4176d88361b7bcb8c66c77918fc0f9036f69c2dde838e17a9"
+        },
+        "stft_kf": {
+          "audio": "audio/native-0060-fs/stft_kf.wav",
+          "spectrogram": "spectrograms/native-0060-fs/stft_kf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 1.662
+          },
+          "sha256": "599b2ad76f0cfbbf2403954578177212875e27e169049d6b8c21e3b7e05e193c"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/native-0060-fs/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/native-0060-fs/hb_dnn_nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 0.155
+          },
+          "sha256": "86f789548dfa35b2c9ca7f0e8e414e5f2ee458f7a5f847d003b57b69482c0522"
+        },
+        "meta_af": {
+          "audio": "audio/native-0060-fs/meta_af.wav",
+          "spectrogram": "spectrograms/native-0060-fs/meta_af.png",
+          "metrics": {
+            "ERLE (dB) ↑": -0.801
+          },
+          "sha256": "cdb043458707aa0a470e981c1b35abae63c8e73564715a33e7d726dfa7e57fea"
+        },
+        "nkf": {
+          "audio": "audio/native-0060-fs/nkf.wav",
+          "spectrogram": "spectrograms/native-0060-fs/nkf.png",
+          "metrics": {
+            "ERLE (dB) ↑": -5.902
+          },
+          "sha256": "a2cb6136f01ab3afb0d45dd6797325304870bf6e3185edea9b218c6d728d29fb"
+        },
+        "neural_mlms": {
+          "audio": "audio/native-0060-fs/neural_mlms.wav",
+          "spectrogram": "spectrograms/native-0060-fs/neural_mlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 2.163
+          },
+          "sha256": "34068d728c0c3ed16ebaffa17763749f92ce2d2d40a14aa43b23c4421d0ccfbc"
+        },
+        "pocket": {
+          "audio": "audio/native-0060-fs/pocket.wav",
+          "spectrogram": "spectrograms/native-0060-fs/pocket.png",
+          "metrics": {
+            "ERLE (dB) ↑": 15.284
+          },
+          "sha256": "4c0ba7c9bd1304205361a496027d4b42a91d8aece062bc4b24340e8864d4a099"
+        },
+        "target": {
+          "audio": "audio/native-0060-fs/target.wav",
+          "spectrogram": "spectrograms/native-0060-fs/target.png",
+          "metrics": {},
+          "sha256": "d0343ef67143fd0a68053af5a93b69d2dee249fbbf6afe6f92f7b1524a9227e7"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 13.02 dB.",
+      "source": "ICASSP 2022 AEC Challenge fullband synthetic dataset, processed at 16 kHz.",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
+        "Original sample ID": "f04194_echo"
+      }
+    },
+    {
+      "id": "native-0210-fs",
+      "title": "Example 16 — Far-end single-talk",
+      "dataset": "AEC Challenge synthetic",
+      "scenario": "FS",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/native-0210-fs/input.wav",
+          "spectrogram": "spectrograms/native-0210-fs/input.png",
+          "metrics": {
+            "ERLE (dB) ↑": 0
+          },
+          "sha256": "3bcfdc7d130b6f5fadf5c9b86934c4a5e0a2b4145fbb36e62e7b72052059d6b5"
+        },
+        "nlms": {
+          "audio": "audio/native-0210-fs/nlms.wav",
+          "spectrogram": "spectrograms/native-0210-fs/nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 11.567
+          },
+          "sha256": "7e9e0137e1a943fb1de29c90d66d0b9a67cf6f888af58bb6c3978890a396a09e"
+        },
+        "stft_kf": {
+          "audio": "audio/native-0210-fs/stft_kf.wav",
+          "spectrogram": "spectrograms/native-0210-fs/stft_kf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 24.862
+          },
+          "sha256": "b81082686a6ca2731453e1f5d8e27491403cd774948320a26b1f02cbb7ad4b7e"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/native-0210-fs/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/native-0210-fs/hb_dnn_nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 11.502
+          },
+          "sha256": "1dc0aa69223a185178aca020e2c7c54f754d312fa47a66e7660f112d50168b72"
+        },
+        "meta_af": {
+          "audio": "audio/native-0210-fs/meta_af.wav",
+          "spectrogram": "spectrograms/native-0210-fs/meta_af.png",
+          "metrics": {
+            "ERLE (dB) ↑": 5.276
+          },
+          "sha256": "70fc05f7dcfb286e522776449712edc387724dc10d938cb7e8a324d4ec3cca55"
+        },
+        "nkf": {
+          "audio": "audio/native-0210-fs/nkf.wav",
+          "spectrogram": "spectrograms/native-0210-fs/nkf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 0.688
+          },
+          "sha256": "cca1f67e2df8646023ffca3a3d3a8bfdba9363022b2643fe6ce60e9ede472c16"
+        },
+        "neural_mlms": {
+          "audio": "audio/native-0210-fs/neural_mlms.wav",
+          "spectrogram": "spectrograms/native-0210-fs/neural_mlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 6.125
+          },
+          "sha256": "e168b6a7f7368c60e3ee7ff84ac69eddaeebec40edb85c40e96eeadb0cb4704d"
+        },
+        "pocket": {
+          "audio": "audio/native-0210-fs/pocket.wav",
+          "spectrogram": "spectrograms/native-0210-fs/pocket.png",
+          "metrics": {
+            "ERLE (dB) ↑": 30.413
+          },
+          "sha256": "4f498f07db1b2c3a7e3dc791a775444efb5c6620171e6d70686dd9a27c44e271"
+        },
+        "target": {
+          "audio": "audio/native-0210-fs/target.wav",
+          "spectrogram": "spectrograms/native-0210-fs/target.png",
+          "metrics": {},
+          "sha256": "d0343ef67143fd0a68053af5a93b69d2dee249fbbf6afe6f92f7b1524a9227e7"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 4.10 dB.",
+      "source": "ICASSP 2022 AEC Challenge fullband synthetic dataset, processed at 16 kHz.",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
+        "Original sample ID": "f05455_echo"
+      }
+    },
+    {
+      "id": "native-0255-fs",
+      "title": "Example 17 — Far-end single-talk",
+      "dataset": "AEC Challenge synthetic",
+      "scenario": "FS",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/native-0255-fs/input.wav",
+          "spectrogram": "spectrograms/native-0255-fs/input.png",
+          "metrics": {
+            "ERLE (dB) ↑": 0
+          },
+          "sha256": "9b819479d4ac92d1c7889e340b81cedfc8aac83af62214e96285b2fb39af87ac"
+        },
+        "nlms": {
+          "audio": "audio/native-0255-fs/nlms.wav",
+          "spectrogram": "spectrograms/native-0255-fs/nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 14.644
+          },
+          "sha256": "5e1afc544c26839d8a29a807a678cb4b183da1601f347addbf9584f966c8584d"
+        },
+        "stft_kf": {
+          "audio": "audio/native-0255-fs/stft_kf.wav",
+          "spectrogram": "spectrograms/native-0255-fs/stft_kf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 20.931
+          },
+          "sha256": "aff5ef369340eaa1dd78bfc5f0760efb30537da0855872d98ecd169dca4aa5d3"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/native-0255-fs/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/native-0255-fs/hb_dnn_nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 17.041
+          },
+          "sha256": "73db82466121951d27f7d7f3c57ac3817debcbae53fe44f9223f5d8b44c6baf6"
+        },
+        "meta_af": {
+          "audio": "audio/native-0255-fs/meta_af.wav",
+          "spectrogram": "spectrograms/native-0255-fs/meta_af.png",
+          "metrics": {
+            "ERLE (dB) ↑": 13.892
+          },
+          "sha256": "3ab153281af39572c1dd617ac562b4993d82b798bd63b2f43cbf89ba6390f996"
+        },
+        "nkf": {
+          "audio": "audio/native-0255-fs/nkf.wav",
+          "spectrogram": "spectrograms/native-0255-fs/nkf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 17.095
+          },
+          "sha256": "71f6f326b4da3eb1775fd16ac4026c1ac4d58f5515896108004ede6504ca93d8"
+        },
+        "neural_mlms": {
+          "audio": "audio/native-0255-fs/neural_mlms.wav",
+          "spectrogram": "spectrograms/native-0255-fs/neural_mlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 18.404
+          },
+          "sha256": "478d42c4313ddc591e02dc838357be295bdbbfa9d57041193415236214d71a18"
+        },
+        "pocket": {
+          "audio": "audio/native-0255-fs/pocket.wav",
+          "spectrogram": "spectrograms/native-0255-fs/pocket.png",
+          "metrics": {
+            "ERLE (dB) ↑": 31.075
+          },
+          "sha256": "5b52e1717899ac5affa2a56c0ca7d2abb7e4854120c97d8bb3489c29ed486794"
+        },
+        "target": {
+          "audio": "audio/native-0255-fs/target.wav",
+          "spectrogram": "spectrograms/native-0255-fs/target.png",
+          "metrics": {},
+          "sha256": "d0343ef67143fd0a68053af5a93b69d2dee249fbbf6afe6f92f7b1524a9227e7"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 3.03 dB.",
+      "source": "ICASSP 2022 AEC Challenge fullband synthetic dataset, processed at 16 kHz.",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
+        "Original sample ID": "f09131_echo"
+      }
+    },
+    {
+      "id": "native-0307-fs",
+      "title": "Example 18 — Far-end single-talk",
+      "dataset": "AEC Challenge synthetic",
+      "scenario": "FS",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/native-0307-fs/input.wav",
+          "spectrogram": "spectrograms/native-0307-fs/input.png",
+          "metrics": {
+            "ERLE (dB) ↑": 0
+          },
+          "sha256": "9548bb2fe606bdd917a594091680213192ad9784e30ebc34a81a5a7f285f1701"
+        },
+        "nlms": {
+          "audio": "audio/native-0307-fs/nlms.wav",
+          "spectrogram": "spectrograms/native-0307-fs/nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 1.196
+          },
+          "sha256": "d2b6f6c3cf64fb8230ab353e01d2b656019bbab94c2e90c847cfe6cf65b704d8"
+        },
+        "stft_kf": {
+          "audio": "audio/native-0307-fs/stft_kf.wav",
+          "spectrogram": "spectrograms/native-0307-fs/stft_kf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 4.512
+          },
+          "sha256": "240f07205811ec43a9cb330d5a5e8ef9e282232233d7dfb5e6051271d883ed62"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/native-0307-fs/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/native-0307-fs/hb_dnn_nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 2.906
+          },
+          "sha256": "cdf93dfbcdbb56f1aa9ede1f88c5a530f70dddeecc9c46d86c27c5f48dca1870"
+        },
+        "meta_af": {
+          "audio": "audio/native-0307-fs/meta_af.wav",
+          "spectrogram": "spectrograms/native-0307-fs/meta_af.png",
+          "metrics": {
+            "ERLE (dB) ↑": 0.589
+          },
+          "sha256": "35e3c181433063bc0b6f9cc2b3f28b5b14c9e1db71a3ebe8e602fa1eba2bef64"
+        },
+        "nkf": {
+          "audio": "audio/native-0307-fs/nkf.wav",
+          "spectrogram": "spectrograms/native-0307-fs/nkf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 3.725
+          },
+          "sha256": "9d1ceebb625c5efbf033dcb0f3de4f38f3616641cdda3155e220e33aca7d5244"
+        },
+        "neural_mlms": {
+          "audio": "audio/native-0307-fs/neural_mlms.wav",
+          "spectrogram": "spectrograms/native-0307-fs/neural_mlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 0.866
+          },
+          "sha256": "ec2ba17a4e4112c0fdf70f3cf689cce676275c3ca5863d1947066bef022d0063"
+        },
+        "pocket": {
+          "audio": "audio/native-0307-fs/pocket.wav",
+          "spectrogram": "spectrograms/native-0307-fs/pocket.png",
+          "metrics": {
+            "ERLE (dB) ↑": 11.701
+          },
+          "sha256": "8309634ff1dc46680dc3e6f298352f63343eebd98e0cacab1235f90d4de65cfb"
+        },
+        "target": {
+          "audio": "audio/native-0307-fs/target.wav",
+          "spectrogram": "spectrograms/native-0307-fs/target.png",
+          "metrics": {},
+          "sha256": "d0343ef67143fd0a68053af5a93b69d2dee249fbbf6afe6f92f7b1524a9227e7"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 37.60 dB.",
+      "source": "ICASSP 2022 AEC Challenge fullband synthetic dataset, processed at 16 kHz.",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
+        "Original sample ID": "f07079_echo"
+      }
+    },
+    {
+      "id": "synth-000045",
+      "title": "Example 19 — Double-talk · echo-path change",
+      "dataset": "Linear synthetic",
+      "scenario": "DT · EPC",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "SER 5.6 dB",
+      "events": [
+        {
+          "time": 3.61,
+          "label": "Path change begins"
+        },
+        {
+          "time": 4.61,
+          "label": "Path change ends"
+        }
+      ],
+      "tracks": {
+        "input": {
+          "audio": "audio/synth-000045/input.wav",
+          "spectrogram": "spectrograms/synth-000045/input.png",
+          "metrics": {},
+          "sha256": "494f9c374c669f0235d06686d8b1b653f8b971cd7d1a35ec5f9551b8df86bcf3"
+        },
+        "nlms": {
+          "audio": "audio/synth-000045/nlms.wav",
+          "spectrogram": "spectrograms/synth-000045/nlms.png",
+          "metrics": {
+            "PESQ ↑": 1.037,
+            "ESTOI ↑": 0.553,
+            "tERLE (dB) ↑": -25.228
+          },
+          "sha256": "3297e5638ef66398be6f2a9c79c58530ed58a4ce876c10fbed4b0d5b35140d25"
+        },
+        "stft_kf": {
+          "audio": "audio/synth-000045/stft_kf.wav",
+          "spectrogram": "spectrograms/synth-000045/stft_kf.png",
+          "metrics": {
+            "PESQ ↑": 1.65,
+            "ESTOI ↑": 0.832,
+            "tERLE (dB) ↑": 6.471
+          },
+          "sha256": "405575986c0ae10849cbafe77b98e06c4bb703dd0b868da0cefbe973ef22798f"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/synth-000045/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/synth-000045/hb_dnn_nlms.png",
+          "metrics": {
+            "PESQ ↑": 2.214,
+            "ESTOI ↑": 0.879,
+            "tERLE (dB) ↑": 7.896
+          },
+          "sha256": "797dee4da405f3dcf47c604687a1e6b3da4de1b431b4b37a5a65e469d6b08d0a"
+        },
+        "meta_af": {
+          "audio": "audio/synth-000045/meta_af.wav",
+          "spectrogram": "spectrograms/synth-000045/meta_af.png",
+          "metrics": {
+            "PESQ ↑": 2.033,
+            "ESTOI ↑": 0.876,
+            "tERLE (dB) ↑": 8.585
+          },
+          "sha256": "19d342dfc622082f5347d48ddfd948ddd20463a9aef8549333b20d279d934890"
+        },
+        "nkf": {
+          "audio": "audio/synth-000045/nkf.wav",
+          "spectrogram": "spectrograms/synth-000045/nkf.png",
+          "metrics": {
+            "PESQ ↑": 1.853,
+            "ESTOI ↑": 0.809,
+            "tERLE (dB) ↑": 3.527
+          },
+          "sha256": "4f82261bd541c03d9ea2cd77859d2b1b1bc2f677d36d93125bcba2aa448e6a24"
+        },
+        "neural_mlms": {
+          "audio": "audio/synth-000045/neural_mlms.wav",
+          "spectrogram": "spectrograms/synth-000045/neural_mlms.png",
+          "metrics": {
+            "PESQ ↑": 1.763,
+            "ESTOI ↑": 0.82,
+            "tERLE (dB) ↑": 3.417
+          },
+          "sha256": "d43511de781e115c67f2ece0b6c1c6abc5aebc23e0967f133c9d8b77dca53111"
+        },
+        "pocket": {
+          "audio": "audio/synth-000045/pocket.wav",
+          "spectrogram": "spectrograms/synth-000045/pocket.png",
+          "metrics": {
+            "PESQ ↑": 3.184,
+            "ESTOI ↑": 0.9,
+            "tERLE (dB) ↑": 11.997
+          },
+          "sha256": "b9798df2a6ef9e1ab2d9da59c111d2a7e0daccd025135275719e9d2fba91752a"
+        },
+        "target": {
+          "audio": "audio/synth-000045/target.wav",
+          "spectrogram": "spectrograms/synth-000045/target.png",
+          "metrics": {},
+          "sha256": "145941516dfe216acdd370760333825db3575d5ee2877046c1bb9ba98e4da0be"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain -5.44 dB.",
+      "source": "Linear synthetic",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the [0.000, 9.984) s interval, before the common playback gain."
+      }
+    },
+    {
+      "id": "synth-000066",
+      "title": "Example 20 — Double-talk · echo-path change",
+      "dataset": "Linear synthetic",
+      "scenario": "DT · EPC",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "SER 2.5 dB",
+      "events": [
+        {
+          "time": 2.92,
+          "label": "Path change begins"
+        },
+        {
+          "time": 3.92,
+          "label": "Path change ends"
+        }
+      ],
+      "tracks": {
+        "input": {
+          "audio": "audio/synth-000066/input.wav",
+          "spectrogram": "spectrograms/synth-000066/input.png",
+          "metrics": {},
+          "sha256": "a3469ee8b1c1a99dfb7e39a2c5c0b9474c1ee9acb05a23ef0f283d755f650cee"
+        },
+        "nlms": {
+          "audio": "audio/synth-000066/nlms.wav",
+          "spectrogram": "spectrograms/synth-000066/nlms.png",
+          "metrics": {
+            "PESQ ↑": 1.317,
+            "ESTOI ↑": 0.591,
+            "tERLE (dB) ↑": 4.744
+          },
+          "sha256": "61ec907d4cad0f2b98d19eb14876b2491e186272835b37c73e8e845b0cfc372a"
+        },
+        "stft_kf": {
+          "audio": "audio/synth-000066/stft_kf.wav",
+          "spectrogram": "spectrograms/synth-000066/stft_kf.png",
+          "metrics": {
+            "PESQ ↑": 1.499,
+            "ESTOI ↑": 0.642,
+            "tERLE (dB) ↑": 9.977
+          },
+          "sha256": "90e57e6102f7da4d989341247abde935b967bf9a49b34a49fec98deb249e8151"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/synth-000066/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/synth-000066/hb_dnn_nlms.png",
+          "metrics": {
+            "PESQ ↑": 1.953,
+            "ESTOI ↑": 0.734,
+            "tERLE (dB) ↑": 15.22
+          },
+          "sha256": "f1d7b5cd63852bcc835be2058f6d0aae89fefc3c85bf74d3dd1a8caad2d094cb"
+        },
+        "meta_af": {
+          "audio": "audio/synth-000066/meta_af.wav",
+          "spectrogram": "spectrograms/synth-000066/meta_af.png",
+          "metrics": {
+            "PESQ ↑": 1.273,
+            "ESTOI ↑": 0.588,
+            "tERLE (dB) ↑": 5.431
+          },
+          "sha256": "03b13d4fb80ea1af6f7a1e5698a31301211e41a06069652021fb1f2f83682a60"
+        },
+        "nkf": {
+          "audio": "audio/synth-000066/nkf.wav",
+          "spectrogram": "spectrograms/synth-000066/nkf.png",
+          "metrics": {
+            "PESQ ↑": 1.339,
+            "ESTOI ↑": 0.624,
+            "tERLE (dB) ↑": 4.658
+          },
+          "sha256": "093f23158f6598726bd43dcb95e9f00e1dabb45069ab5e210ea4327f136581da"
+        },
+        "neural_mlms": {
+          "audio": "audio/synth-000066/neural_mlms.wav",
+          "spectrogram": "spectrograms/synth-000066/neural_mlms.png",
+          "metrics": {
+            "PESQ ↑": 1.476,
+            "ESTOI ↑": 0.683,
+            "tERLE (dB) ↑": 11.103
+          },
+          "sha256": "c5b95cf023aab66c46937d318a28a9643184f05e4bee253737260add74b1bd19"
+        },
+        "pocket": {
+          "audio": "audio/synth-000066/pocket.wav",
+          "spectrogram": "spectrograms/synth-000066/pocket.png",
+          "metrics": {
+            "PESQ ↑": 2.827,
+            "ESTOI ↑": 0.78,
+            "tERLE (dB) ↑": 16.17
+          },
+          "sha256": "c5bcbb5798764449fc9659d54a0bf54969375d1a86acc56c5ef2734a64d28b54"
+        },
+        "target": {
+          "audio": "audio/synth-000066/target.wav",
+          "spectrogram": "spectrograms/synth-000066/target.png",
+          "metrics": {},
+          "sha256": "f833c975a38c695827eac4a9d6ad7697d18449f343986596490230af13c58111"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 15.31 dB.",
+      "source": "Linear synthetic",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the [0.000, 9.984) s interval, before the common playback gain."
+      }
+    },
+    {
+      "id": "synth-000257",
+      "title": "Example 21 — Double-talk · echo-path change",
+      "dataset": "Linear synthetic",
+      "scenario": "DT · EPC",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "SER 6.0 dB",
+      "events": [
+        {
+          "time": 6.98,
+          "label": "Path change begins"
+        },
+        {
+          "time": 7.98,
+          "label": "Path change ends"
+        }
+      ],
+      "tracks": {
+        "input": {
+          "audio": "audio/synth-000257/input.wav",
+          "spectrogram": "spectrograms/synth-000257/input.png",
+          "metrics": {},
+          "sha256": "ff9cc57677c64f2b733d91ccd1eb9f4bf2edad52ab56040fc6176bf16f41dd10"
+        },
+        "nlms": {
+          "audio": "audio/synth-000257/nlms.wav",
+          "spectrogram": "spectrograms/synth-000257/nlms.png",
+          "metrics": {
+            "PESQ ↑": 1.301,
+            "ESTOI ↑": 0.68,
+            "tERLE (dB) ↑": -5.195
+          },
+          "sha256": "7c2b4a86c0839686f72132a8c878aa0e423adc0d179cbc48cd59f6406b18d227"
+        },
+        "stft_kf": {
+          "audio": "audio/synth-000257/stft_kf.wav",
+          "spectrogram": "spectrograms/synth-000257/stft_kf.png",
+          "metrics": {
+            "PESQ ↑": 1.694,
+            "ESTOI ↑": 0.832,
+            "tERLE (dB) ↑": 5.959
+          },
+          "sha256": "c6da8be9579021d1f8b076a6593767e82ba4096abc80337450fe8177d618b663"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/synth-000257/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/synth-000257/hb_dnn_nlms.png",
+          "metrics": {
+            "PESQ ↑": 2.429,
+            "ESTOI ↑": 0.907,
+            "tERLE (dB) ↑": 12.542
+          },
+          "sha256": "42bfca8d1ad08ac11032b0163c3414b486dddfe3b3fc29165546bce1677ac6f2"
+        },
+        "meta_af": {
+          "audio": "audio/synth-000257/meta_af.wav",
+          "spectrogram": "spectrograms/synth-000257/meta_af.png",
+          "metrics": {
+            "PESQ ↑": 1.924,
+            "ESTOI ↑": 0.884,
+            "tERLE (dB) ↑": 6.646
+          },
+          "sha256": "edea239484a992b78289dc8ec9002e78876bf5bdd11c0ba366bbbaaa1705557e"
+        },
+        "nkf": {
+          "audio": "audio/synth-000257/nkf.wav",
+          "spectrogram": "spectrograms/synth-000257/nkf.png",
+          "metrics": {
+            "PESQ ↑": 2.144,
+            "ESTOI ↑": 0.832,
+            "tERLE (dB) ↑": 9.096
+          },
+          "sha256": "a685b3a125b7df3d6c13081dd02fb52e31c97452c95fc8fc2cdb2b42cc725a1b"
+        },
+        "neural_mlms": {
+          "audio": "audio/synth-000257/neural_mlms.wav",
+          "spectrogram": "spectrograms/synth-000257/neural_mlms.png",
+          "metrics": {
+            "PESQ ↑": 1.898,
+            "ESTOI ↑": 0.833,
+            "tERLE (dB) ↑": 8.93
+          },
+          "sha256": "572a790049ab9368d2b310df93f4e52f565bb6eb1292b964cbe631bbed0c9b4b"
+        },
+        "pocket": {
+          "audio": "audio/synth-000257/pocket.wav",
+          "spectrogram": "spectrograms/synth-000257/pocket.png",
+          "metrics": {
+            "PESQ ↑": 3.363,
+            "ESTOI ↑": 0.946,
+            "tERLE (dB) ↑": 15.324
+          },
+          "sha256": "a5370876e66a31a5925b8f220764a0d7d592667a502e54cba3a2f41d1d9bf5d5"
+        },
+        "target": {
+          "audio": "audio/synth-000257/target.wav",
+          "spectrogram": "spectrograms/synth-000257/target.png",
+          "metrics": {},
+          "sha256": "da974e7ddb57ca7ab47647635bd37bf92bfd1c392601c9258fe1aab5322b1a13"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 11.04 dB.",
+      "source": "Linear synthetic",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the [0.000, 9.984) s interval, before the common playback gain."
+      }
+    },
+    {
+      "id": "synth-000120",
+      "title": "Example 22 — Double-talk · static echo path",
+      "dataset": "Linear synthetic",
+      "scenario": "DT · static",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "SER -5.5 dB",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/synth-000120/input.wav",
+          "spectrogram": "spectrograms/synth-000120/input.png",
+          "metrics": {},
+          "sha256": "f5bf45cddf8c9e0394f3608a92b2926ae78576e92eac84115bb92268dd0c58ae"
+        },
+        "nlms": {
+          "audio": "audio/synth-000120/nlms.wav",
+          "spectrogram": "spectrograms/synth-000120/nlms.png",
+          "metrics": {
+            "PESQ ↑": 1.532,
+            "ESTOI ↑": 0.561,
+            "tERLE (dB) ↑": 12.83
+          },
+          "sha256": "ed459e18d61271362c54ccd25f74d10419b3a0269f32bc81b5c0d086eda54458"
+        },
+        "stft_kf": {
+          "audio": "audio/synth-000120/stft_kf.wav",
+          "spectrogram": "spectrograms/synth-000120/stft_kf.png",
+          "metrics": {
+            "PESQ ↑": 1.667,
+            "ESTOI ↑": 0.641,
+            "tERLE (dB) ↑": 14.957
+          },
+          "sha256": "126a7529344102111ad78e9e8418ee2c79493ccff217dd2a278e57d04fa6304c"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/synth-000120/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/synth-000120/hb_dnn_nlms.png",
+          "metrics": {
+            "PESQ ↑": 2.307,
+            "ESTOI ↑": 0.733,
+            "tERLE (dB) ↑": 16.924
+          },
+          "sha256": "b432c2799cf4f33a8095f964093c97344fce6699ff5d02c9070afbe97fa6e84d"
+        },
+        "meta_af": {
+          "audio": "audio/synth-000120/meta_af.wav",
+          "spectrogram": "spectrograms/synth-000120/meta_af.png",
+          "metrics": {
+            "PESQ ↑": 1.084,
+            "ESTOI ↑": 0.341,
+            "tERLE (dB) ↑": 2.136
+          },
+          "sha256": "690d0702a10eec6ff0aef8feb7096264227ba71f33fe152bc5b000c976dd45bc"
+        },
+        "nkf": {
+          "audio": "audio/synth-000120/nkf.wav",
+          "spectrogram": "spectrograms/synth-000120/nkf.png",
+          "metrics": {
+            "PESQ ↑": 1.078,
+            "ESTOI ↑": 0.305,
+            "tERLE (dB) ↑": 0.615
+          },
+          "sha256": "038ee1ca78263f4640ed67b76e8e798a4eb5299857433625c2fccf989da1ea5b"
+        },
+        "neural_mlms": {
+          "audio": "audio/synth-000120/neural_mlms.wav",
+          "spectrogram": "spectrograms/synth-000120/neural_mlms.png",
+          "metrics": {
+            "PESQ ↑": 1.851,
+            "ESTOI ↑": 0.714,
+            "tERLE (dB) ↑": 19.014
+          },
+          "sha256": "8abd4ae9d4d043f25a24031e1f0acbe410b59095efdb38564c543297cd3c8284"
+        },
+        "pocket": {
+          "audio": "audio/synth-000120/pocket.wav",
+          "spectrogram": "spectrograms/synth-000120/pocket.png",
+          "metrics": {
+            "PESQ ↑": 2.733,
+            "ESTOI ↑": 0.751,
+            "tERLE (dB) ↑": 21.041
+          },
+          "sha256": "8aefa7582cebdac7af4f2a0079cc33d0c2dcde694bb511437a98644cc64858ed"
+        },
+        "target": {
+          "audio": "audio/synth-000120/target.wav",
+          "spectrogram": "spectrograms/synth-000120/target.png",
+          "metrics": {},
+          "sha256": "28d202ea73b7eb697e4216facf0f8b0119b5cf1458ab88020c348b7636e53c89"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain -0.18 dB.",
+      "source": "Linear synthetic",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the [0.000, 9.984) s interval, before the common playback gain."
+      }
+    },
+    {
+      "id": "synth-000004",
+      "title": "Example 23 — Far-end single-talk · echo-path change",
+      "dataset": "Linear synthetic",
+      "scenario": "FS · EPC",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "",
+      "events": [
+        {
+          "time": 7.9,
+          "label": "Path change begins"
+        },
+        {
+          "time": 8.9,
+          "label": "Path change ends"
+        }
+      ],
+      "tracks": {
+        "input": {
+          "audio": "audio/synth-000004/input.wav",
+          "spectrogram": "spectrograms/synth-000004/input.png",
+          "metrics": {},
+          "sha256": "1823edd3c15d8c7685771bc1a5990163edd6a4ca6d906d3cbef72a9aa41fa919"
+        },
+        "nlms": {
+          "audio": "audio/synth-000004/nlms.wav",
+          "spectrogram": "spectrograms/synth-000004/nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 10.24
+          },
+          "sha256": "c588016f853a937a759102f4286f0ed1d0bb6d67a3092422f608c4eece919b24"
+        },
+        "stft_kf": {
+          "audio": "audio/synth-000004/stft_kf.wav",
+          "spectrogram": "spectrograms/synth-000004/stft_kf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 12.897
+          },
+          "sha256": "05cac6ba5a6b25776acffd8884ffd9fb97e2ef94b01b101f585b6051db0c4f60"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/synth-000004/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/synth-000004/hb_dnn_nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 17.427
+          },
+          "sha256": "f1078ecf2865c6386b5ea455b576bb869105199f688bf4702f41614aaaf26e9f"
+        },
+        "meta_af": {
+          "audio": "audio/synth-000004/meta_af.wav",
+          "spectrogram": "spectrograms/synth-000004/meta_af.png",
+          "metrics": {
+            "ERLE (dB) ↑": 7.015
+          },
+          "sha256": "05c027d6cd101596da651cb449c5b24b61e2b551c6f155681d3ba6433aa2c70b"
+        },
+        "nkf": {
+          "audio": "audio/synth-000004/nkf.wav",
+          "spectrogram": "spectrograms/synth-000004/nkf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 7.494
+          },
+          "sha256": "7d7328d9f4171151b819702d5b39a2d6e2cc3f2af62c0cf2666256f905cbc751"
+        },
+        "neural_mlms": {
+          "audio": "audio/synth-000004/neural_mlms.wav",
+          "spectrogram": "spectrograms/synth-000004/neural_mlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 16.364
+          },
+          "sha256": "ecef4cd122eb16408573c1f528cbf3d55f05973419e8949fa6f354b941ee23eb"
+        },
+        "pocket": {
+          "audio": "audio/synth-000004/pocket.wav",
+          "spectrogram": "spectrograms/synth-000004/pocket.png",
+          "metrics": {
+            "ERLE (dB) ↑": 32.008
+          },
+          "sha256": "a45f9c3a6a61db415450f5daed539dffaa40ceb549d259cdd31e133bf8754b5f"
+        },
+        "target": {
+          "audio": "audio/synth-000004/target.wav",
+          "spectrogram": "spectrograms/synth-000004/target.png",
+          "metrics": {},
+          "sha256": "d0343ef67143fd0a68053af5a93b69d2dee249fbbf6afe6f92f7b1524a9227e7"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain -0.18 dB.",
+      "source": "Linear synthetic",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the [0.000, 9.984) s interval, before the common playback gain."
+      }
+    },
+    {
+      "id": "synth-000193",
+      "title": "Example 24 — Far-end single-talk · echo-path change",
+      "dataset": "Linear synthetic",
+      "scenario": "FS · EPC",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "",
+      "events": [
+        {
+          "time": 4.12,
+          "label": "Path change begins"
+        },
+        {
+          "time": 5.12,
+          "label": "Path change ends"
+        }
+      ],
+      "tracks": {
+        "input": {
+          "audio": "audio/synth-000193/input.wav",
+          "spectrogram": "spectrograms/synth-000193/input.png",
+          "metrics": {},
+          "sha256": "96372285383b6e853808a8cf58ff5a0d31ec0b27bbb9431da14ddef9f92f83ac"
+        },
+        "nlms": {
+          "audio": "audio/synth-000193/nlms.wav",
+          "spectrogram": "spectrograms/synth-000193/nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 17.826
+          },
+          "sha256": "d83303e7a3081ba0ba17626a38d3b6493608a71b03b9d60677fc431aabf2b650"
+        },
+        "stft_kf": {
+          "audio": "audio/synth-000193/stft_kf.wav",
+          "spectrogram": "spectrograms/synth-000193/stft_kf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 15.62
+          },
+          "sha256": "f591705de20680dc51772fb3ae291c8452945ec4a51c2ea991c6f3b78bdde809"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/synth-000193/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/synth-000193/hb_dnn_nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 24.386
+          },
+          "sha256": "515f055a83e2fde1beabcd0fa78978fea95afc93b306143af0698acf34e733b6"
+        },
+        "meta_af": {
+          "audio": "audio/synth-000193/meta_af.wav",
+          "spectrogram": "spectrograms/synth-000193/meta_af.png",
+          "metrics": {
+            "ERLE (dB) ↑": 8.192
+          },
+          "sha256": "6ea469d675569d9ee132f8a93a72b480f983168cd0c19820370b5f24194e3561"
+        },
+        "nkf": {
+          "audio": "audio/synth-000193/nkf.wav",
+          "spectrogram": "spectrograms/synth-000193/nkf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 3.14
+          },
+          "sha256": "0a848cc8e058d7eccad3f43e3f7576fc9bddf8e21c4a5afc2dba0fc9305c418a"
+        },
+        "neural_mlms": {
+          "audio": "audio/synth-000193/neural_mlms.wav",
+          "spectrogram": "spectrograms/synth-000193/neural_mlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 20.084
+          },
+          "sha256": "3626ff2ad4442778e238717da1b13a0481534ea5330a115afa8ab94f5afbe5e2"
+        },
+        "pocket": {
+          "audio": "audio/synth-000193/pocket.wav",
+          "spectrogram": "spectrograms/synth-000193/pocket.png",
+          "metrics": {
+            "ERLE (dB) ↑": 39.599
+          },
+          "sha256": "63c260c7539e93c2b75111a4b96f8615b5a4effad0ff7e09a682e12047a8788c"
+        },
+        "target": {
+          "audio": "audio/synth-000193/target.wav",
+          "spectrogram": "spectrograms/synth-000193/target.png",
+          "metrics": {},
+          "sha256": "d0343ef67143fd0a68053af5a93b69d2dee249fbbf6afe6f92f7b1524a9227e7"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain -0.18 dB.",
+      "source": "Linear synthetic",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the [0.000, 9.984) s interval, before the common playback gain."
+      }
+    },
+    {
+      "id": "synth-000434",
+      "title": "Example 25 — Far-end single-talk · echo-path change",
+      "dataset": "Linear synthetic",
+      "scenario": "FS · EPC",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "",
+      "events": [
+        {
+          "time": 5.36,
+          "label": "Path change begins"
+        },
+        {
+          "time": 6.36,
+          "label": "Path change ends"
+        }
+      ],
+      "tracks": {
+        "input": {
+          "audio": "audio/synth-000434/input.wav",
+          "spectrogram": "spectrograms/synth-000434/input.png",
+          "metrics": {},
+          "sha256": "cd6c59535da45cdb277c91e340f62a91c264fc26314bce33b0e407e5829fcceb"
+        },
+        "nlms": {
+          "audio": "audio/synth-000434/nlms.wav",
+          "spectrogram": "spectrograms/synth-000434/nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 17.503
+          },
+          "sha256": "ed49effb3adcb75cf54ea1db25baabc1ab808e2c981150a5b19184e73a310dd8"
+        },
+        "stft_kf": {
+          "audio": "audio/synth-000434/stft_kf.wav",
+          "spectrogram": "spectrograms/synth-000434/stft_kf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 16.967
+          },
+          "sha256": "7ac7bb8e1461787ed686c51f223e126137d880dec0484814f6da074e1546e2c6"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/synth-000434/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/synth-000434/hb_dnn_nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 22.599
+          },
+          "sha256": "ea0aeaae8f6eecf9884ce6d9da8ecc90c54cf7aa760b308752a0b2d4032e4d43"
+        },
+        "meta_af": {
+          "audio": "audio/synth-000434/meta_af.wav",
+          "spectrogram": "spectrograms/synth-000434/meta_af.png",
+          "metrics": {
+            "ERLE (dB) ↑": 9.863
+          },
+          "sha256": "b15c463138060e9ac5182af9626fd25a7725580ab2c00ddb7303ff12754d1fd5"
+        },
+        "nkf": {
+          "audio": "audio/synth-000434/nkf.wav",
+          "spectrogram": "spectrograms/synth-000434/nkf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 15.159
+          },
+          "sha256": "5101885d24bd56bd6522d429910afdc0852893d0ba03b82f85a4e3553c8ed0f9"
+        },
+        "neural_mlms": {
+          "audio": "audio/synth-000434/neural_mlms.wav",
+          "spectrogram": "spectrograms/synth-000434/neural_mlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 21.855
+          },
+          "sha256": "bee3eb4363848cd8c736805ce3f7bd033c99557de581c266e3269058ef1ecad4"
+        },
+        "pocket": {
+          "audio": "audio/synth-000434/pocket.wav",
+          "spectrogram": "spectrograms/synth-000434/pocket.png",
+          "metrics": {
+            "ERLE (dB) ↑": 37.379
+          },
+          "sha256": "9129f8b9da3db04a51980173f392e5c994c01d69d556fa2d06090d5379829ab3"
+        },
+        "target": {
+          "audio": "audio/synth-000434/target.wav",
+          "spectrogram": "spectrograms/synth-000434/target.png",
+          "metrics": {},
+          "sha256": "d0343ef67143fd0a68053af5a93b69d2dee249fbbf6afe6f92f7b1524a9227e7"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 15.85 dB.",
+      "source": "Linear synthetic",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the [0.000, 9.984) s interval, before the common playback gain."
+      }
+    },
+    {
+      "id": "synth-000200",
+      "title": "Example 26 — Far-end single-talk · static echo path",
+      "dataset": "Linear synthetic",
+      "scenario": "FS · static",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/synth-000200/input.wav",
+          "spectrogram": "spectrograms/synth-000200/input.png",
+          "metrics": {},
+          "sha256": "87cf735f0e2330fc4c20ae30afc18b4f90c33bd461fd9accdb1d7f3e6d6d303a"
+        },
+        "nlms": {
+          "audio": "audio/synth-000200/nlms.wav",
+          "spectrogram": "spectrograms/synth-000200/nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 18.344
+          },
+          "sha256": "c1e25656e7d9a8f496aa7b67f394faecee60d39f29e2082a6d14b244f9e414b4"
+        },
+        "stft_kf": {
+          "audio": "audio/synth-000200/stft_kf.wav",
+          "spectrogram": "spectrograms/synth-000200/stft_kf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 30.1
+          },
+          "sha256": "6a5b335a57b68e0a244d1d3a6b1bae2ad7f3835a73e5769dd6724cdbb9a97547"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/synth-000200/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/synth-000200/hb_dnn_nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 26.045
+          },
+          "sha256": "219eff2f6fb9035f05f777edb02d5365509ea2947bad6f3fe2a60bccb3af7265"
+        },
+        "meta_af": {
+          "audio": "audio/synth-000200/meta_af.wav",
+          "spectrogram": "spectrograms/synth-000200/meta_af.png",
+          "metrics": {
+            "ERLE (dB) ↑": 10.527
+          },
+          "sha256": "c1a4b2dcf4834b8cc7467282184f5dcc9c004ed519aa56226245656c21c9257f"
+        },
+        "nkf": {
+          "audio": "audio/synth-000200/nkf.wav",
+          "spectrogram": "spectrograms/synth-000200/nkf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 8.106
+          },
+          "sha256": "37c2e786f525dd49373c31bdf65edb3e701446add1440d24da92dc8414d7bf88"
+        },
+        "neural_mlms": {
+          "audio": "audio/synth-000200/neural_mlms.wav",
+          "spectrogram": "spectrograms/synth-000200/neural_mlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 28.276
+          },
+          "sha256": "08f3a9abc3a2bcd6324be04d9dfff0274b55c2780917cb8c7b8f26e03a692895"
+        },
+        "pocket": {
+          "audio": "audio/synth-000200/pocket.wav",
+          "spectrogram": "spectrograms/synth-000200/pocket.png",
+          "metrics": {
+            "ERLE (dB) ↑": 39.175
+          },
+          "sha256": "b1c31019d67a3d9d8a22bbdb6c905e470452451f1f0c6fa767a1f89d0e285ded"
+        },
+        "target": {
+          "audio": "audio/synth-000200/target.wav",
+          "spectrogram": "spectrograms/synth-000200/target.png",
+          "metrics": {},
+          "sha256": "d0343ef67143fd0a68053af5a93b69d2dee249fbbf6afe6f92f7b1524a9227e7"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain -0.18 dB.",
+      "source": "Linear synthetic",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the [0.000, 9.984) s interval, before the common playback gain."
+      }
+    },
+    {
+      "id": "synth-000362",
+      "title": "Example 27 — Far-end single-talk · static echo path",
+      "dataset": "Linear synthetic",
+      "scenario": "FS · static",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/synth-000362/input.wav",
+          "spectrogram": "spectrograms/synth-000362/input.png",
+          "metrics": {},
+          "sha256": "fbf87cfec31de5982e4b12ec2380617da4b9e10e41649f134d96eaabf0636308"
+        },
+        "nlms": {
+          "audio": "audio/synth-000362/nlms.wav",
+          "spectrogram": "spectrograms/synth-000362/nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 19.563
+          },
+          "sha256": "7fd99d3a77a2548eafc48d3082ee8000b5065db5810e6f3e0e8fccc558fb7a45"
+        },
+        "stft_kf": {
+          "audio": "audio/synth-000362/stft_kf.wav",
+          "spectrogram": "spectrograms/synth-000362/stft_kf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 33.101
+          },
+          "sha256": "73c9622ef37e2976a8914c5c07486a77820984f10739f255adfe98939c407f86"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/synth-000362/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/synth-000362/hb_dnn_nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 26.513
+          },
+          "sha256": "74c3e8d9369238dc086b0536cf4ab546bb6d5daeba9220a6acdb236fc38e7bf1"
+        },
+        "meta_af": {
+          "audio": "audio/synth-000362/meta_af.wav",
+          "spectrogram": "spectrograms/synth-000362/meta_af.png",
+          "metrics": {
+            "ERLE (dB) ↑": 13.234
+          },
+          "sha256": "df4eb71f3288c6e0edf4a162786874b5be94ab5a15137e0deffd89c0cc79b339"
+        },
+        "nkf": {
+          "audio": "audio/synth-000362/nkf.wav",
+          "spectrogram": "spectrograms/synth-000362/nkf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 13.171
+          },
+          "sha256": "97a43ce794f3e386fe5d7382b9564f9814aa71dfaec842be7bdbfddba03c1f5b"
+        },
+        "neural_mlms": {
+          "audio": "audio/synth-000362/neural_mlms.wav",
+          "spectrogram": "spectrograms/synth-000362/neural_mlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 27.074
+          },
+          "sha256": "1fabe45723877b416d16df53f0a89934f6e13c54b11889da2ba67dc3fbb33756"
+        },
+        "pocket": {
+          "audio": "audio/synth-000362/pocket.wav",
+          "spectrogram": "spectrograms/synth-000362/pocket.png",
+          "metrics": {
+            "ERLE (dB) ↑": 41.742
+          },
+          "sha256": "587953fb05924d5965efdd79112a7d9794e26400055c7ce6c2ac39493e913690"
+        },
+        "target": {
+          "audio": "audio/synth-000362/target.wav",
+          "spectrogram": "spectrograms/synth-000362/target.png",
+          "metrics": {},
+          "sha256": "d0343ef67143fd0a68053af5a93b69d2dee249fbbf6afe6f92f7b1524a9227e7"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain -0.18 dB.",
+      "source": "Linear synthetic",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the [0.000, 9.984) s interval, before the common playback gain."
+      }
+    },
+    {
+      "id": "synth-000007",
+      "title": "Example 28 — Near-end single-talk · control",
+      "dataset": "Linear synthetic",
+      "scenario": "NS · control",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/synth-000007/input.wav",
+          "spectrogram": "spectrograms/synth-000007/input.png",
+          "metrics": {},
+          "sha256": "a70190d5dde657a9ee5eb39077a7bf8d9699acc26aa3f2ffb3cf4936bde9e0f2"
+        },
+        "nlms": {
+          "audio": "audio/synth-000007/nlms.wav",
+          "spectrogram": "spectrograms/synth-000007/nlms.png",
+          "metrics": {
+            "PESQ ↑": 4.644,
+            "ESTOI ↑": 1
+          },
+          "sha256": "3b3921e04697acad923484cf06e054272e48074721b3cf6ecb37e91e873adaf3"
+        },
+        "stft_kf": {
+          "audio": "audio/synth-000007/stft_kf.wav",
+          "spectrogram": "spectrograms/synth-000007/stft_kf.png",
+          "metrics": {
+            "PESQ ↑": 4.644,
+            "ESTOI ↑": 1
+          },
+          "sha256": "7bd168fc19fa1c5f97ec35dd15608339cc413b04567f91886e1eccfeb0f78b4e"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/synth-000007/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/synth-000007/hb_dnn_nlms.png",
+          "metrics": {
+            "PESQ ↑": 4.644,
+            "ESTOI ↑": 1
+          },
+          "sha256": "3b3921e04697acad923484cf06e054272e48074721b3cf6ecb37e91e873adaf3"
+        },
+        "meta_af": {
+          "audio": "audio/synth-000007/meta_af.wav",
+          "spectrogram": "spectrograms/synth-000007/meta_af.png",
+          "metrics": {
+            "PESQ ↑": 4.644,
+            "ESTOI ↑": 1
+          },
+          "sha256": "21c7eb8c903dc535b9de31b85eeeb066d2798038d8f29120fb5ae46b1a42e189"
+        },
+        "nkf": {
+          "audio": "audio/synth-000007/nkf.wav",
+          "spectrogram": "spectrograms/synth-000007/nkf.png",
+          "metrics": {
+            "PESQ ↑": 4.644,
+            "ESTOI ↑": 1
+          },
+          "sha256": "23e0d58f73475aa319106440edd37d1ce3594951a75cf44169b8351e708957c6"
+        },
+        "neural_mlms": {
+          "audio": "audio/synth-000007/neural_mlms.wav",
+          "spectrogram": "spectrograms/synth-000007/neural_mlms.png",
+          "metrics": {
+            "PESQ ↑": 4.644,
+            "ESTOI ↑": 1
+          },
+          "sha256": "a70190d5dde657a9ee5eb39077a7bf8d9699acc26aa3f2ffb3cf4936bde9e0f2"
+        },
+        "pocket": {
+          "audio": "audio/synth-000007/pocket.wav",
+          "spectrogram": "spectrograms/synth-000007/pocket.png",
+          "metrics": {
+            "PESQ ↑": 4.644,
+            "ESTOI ↑": 1
+          },
+          "sha256": "3b3921e04697acad923484cf06e054272e48074721b3cf6ecb37e91e873adaf3"
+        },
+        "target": {
+          "audio": "audio/synth-000007/target.wav",
+          "spectrogram": "spectrograms/synth-000007/target.png",
+          "metrics": {},
+          "sha256": "a70190d5dde657a9ee5eb39077a7bf8d9699acc26aa3f2ffb3cf4936bde9e0f2"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 14.68 dB.",
+      "source": "Linear synthetic",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the [0.000, 9.984) s interval, before the common playback gain."
+      }
+    },
+    {
+      "id": "car-0702-dt-clean",
+      "title": "Example 29 — Double-talk · clean",
+      "dataset": "Recorded vehicle echo",
+      "scenario": "DT · clean",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "SER 10.0 dB",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/car-0702-dt-clean/input.wav",
+          "spectrogram": "spectrograms/car-0702-dt-clean/input.png",
+          "metrics": {
+            "PESQ ↑": 2.188,
+            "ESTOI ↑": 0.782,
+            "tERLE (dB) ↑": 0,
+            "LSD (dB) ↓": 4.977
+          },
+          "sha256": "adf21e791cca3d07eb3f502ac8b39e2099d9489f123681c35e60b59fc8cd2bf1"
+        },
+        "nlms": {
+          "audio": "audio/car-0702-dt-clean/nlms.wav",
+          "spectrogram": "spectrograms/car-0702-dt-clean/nlms.png",
+          "metrics": {
+            "PESQ ↑": 2.028,
+            "ESTOI ↑": 0.772,
+            "tERLE (dB) ↑": 0.852,
+            "LSD (dB) ↓": 4.883
+          },
+          "sha256": "cd7f07bc144bc1780b07971956d02dc3041d2d239cd00b630dc72311d2edb860"
+        },
+        "stft_kf": {
+          "audio": "audio/car-0702-dt-clean/stft_kf.wav",
+          "spectrogram": "spectrograms/car-0702-dt-clean/stft_kf.png",
+          "metrics": {
+            "PESQ ↑": 2.739,
+            "ESTOI ↑": 0.859,
+            "tERLE (dB) ↑": 9.334,
+            "LSD (dB) ↓": 3.815
+          },
+          "sha256": "df71468efc3c1af92d800692f22f7e6f1aef76b3da4aa46b531a656be4c2191c"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/car-0702-dt-clean/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/car-0702-dt-clean/hb_dnn_nlms.png",
+          "metrics": {
+            "PESQ ↑": 3.128,
+            "ESTOI ↑": 0.875,
+            "tERLE (dB) ↑": 8.025,
+            "LSD (dB) ↓": 2.484
+          },
+          "sha256": "ca581f376a12a6d7baf964f5d212262e8f340a440ad897093cf7cd9cba7784d8"
+        },
+        "meta_af": {
+          "audio": "audio/car-0702-dt-clean/meta_af.wav",
+          "spectrogram": "spectrograms/car-0702-dt-clean/meta_af.png",
+          "metrics": {
+            "PESQ ↑": 2.469,
+            "ESTOI ↑": 0.821,
+            "tERLE (dB) ↑": 1.684,
+            "LSD (dB) ↓": 4.47
+          },
+          "sha256": "af0a9b7c083cd4d6ce3b3fe050c6d045045716a8524b70fe7554078214937a9f"
+        },
+        "nkf": {
+          "audio": "audio/car-0702-dt-clean/nkf.wav",
+          "spectrogram": "spectrograms/car-0702-dt-clean/nkf.png",
+          "metrics": {
+            "PESQ ↑": 2.467,
+            "ESTOI ↑": 0.804,
+            "tERLE (dB) ↑": 1.475,
+            "LSD (dB) ↓": 4.061
+          },
+          "sha256": "16d7db780682779f292de5e28c9b77dcf1c6a4228568958ab5a9c2ae4e1121bc"
+        },
+        "neural_mlms": {
+          "audio": "audio/car-0702-dt-clean/neural_mlms.wav",
+          "spectrogram": "spectrograms/car-0702-dt-clean/neural_mlms.png",
+          "metrics": {
+            "PESQ ↑": 2.974,
+            "ESTOI ↑": 0.87,
+            "tERLE (dB) ↑": 6.554,
+            "LSD (dB) ↓": 3.039
+          },
+          "sha256": "759ed5336f75ba0183780e6632fb696cb247504a0c34a007f056799d0875e8d1"
+        },
+        "pocket": {
+          "audio": "audio/car-0702-dt-clean/pocket.wav",
+          "spectrogram": "spectrograms/car-0702-dt-clean/pocket.png",
+          "metrics": {
+            "PESQ ↑": 3.498,
+            "ESTOI ↑": 0.902,
+            "tERLE (dB) ↑": 19.031,
+            "LSD (dB) ↓": 1.776
+          },
+          "sha256": "61aea3ad83a33bc2e428e668637d2fbc0517242f879485f1d318f853165d51b1"
+        },
+        "target": {
+          "audio": "audio/car-0702-dt-clean/target.wav",
+          "spectrogram": "spectrograms/car-0702-dt-clean/target.png",
+          "metrics": {},
+          "sha256": "291c6b8c52a9093e4b5568fcfd13d9023ccfe0c0fb2121f77170a88a6598e639"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 4.45 dB.",
+      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise.",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
+        "Original sample ID": "weilai_test_00175"
+      }
+    },
+    {
+      "id": "car-1202-dt-clean",
+      "title": "Example 30 — Double-talk · clean",
+      "dataset": "Recorded vehicle echo",
+      "scenario": "DT · clean",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "SER 0.0 dB",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/car-1202-dt-clean/input.wav",
+          "spectrogram": "spectrograms/car-1202-dt-clean/input.png",
+          "metrics": {
+            "PESQ ↑": 1.508,
+            "ESTOI ↑": 0.628,
+            "tERLE (dB) ↑": 0,
+            "LSD (dB) ↓": 7.135
+          },
+          "sha256": "7f534c09cebaa07dadeefb1ee5da4bf5bdf50a508fc8a01c45621780bbf83746"
+        },
+        "nlms": {
+          "audio": "audio/car-1202-dt-clean/nlms.wav",
+          "spectrogram": "spectrograms/car-1202-dt-clean/nlms.png",
+          "metrics": {
+            "PESQ ↑": 1.992,
+            "ESTOI ↑": 0.698,
+            "tERLE (dB) ↑": 4.84,
+            "LSD (dB) ↓": 5.938
+          },
+          "sha256": "c009b6e8ef0fcf7ed68fe01e459b693c2cb098179e08bd3df2a52dfe89284c56"
+        },
+        "stft_kf": {
+          "audio": "audio/car-1202-dt-clean/stft_kf.wav",
+          "spectrogram": "spectrograms/car-1202-dt-clean/stft_kf.png",
+          "metrics": {
+            "PESQ ↑": 2.369,
+            "ESTOI ↑": 0.782,
+            "tERLE (dB) ↑": 13.118,
+            "LSD (dB) ↓": 4.955
+          },
+          "sha256": "abe306a3735531557968acb16465fdda99eecaad9b9a566595ec7122c4233a3a"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/car-1202-dt-clean/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/car-1202-dt-clean/hb_dnn_nlms.png",
+          "metrics": {
+            "PESQ ↑": 2.573,
+            "ESTOI ↑": 0.811,
+            "tERLE (dB) ↑": 9.128,
+            "LSD (dB) ↓": 3.548
+          },
+          "sha256": "07084ce9b71a75551ac7b513b6fc21c42b03a304972b7f064ee209200ac840e6"
+        },
+        "meta_af": {
+          "audio": "audio/car-1202-dt-clean/meta_af.wav",
+          "spectrogram": "spectrograms/car-1202-dt-clean/meta_af.png",
+          "metrics": {
+            "PESQ ↑": 1.702,
+            "ESTOI ↑": 0.682,
+            "tERLE (dB) ↑": 2.286,
+            "LSD (dB) ↓": 6.171
+          },
+          "sha256": "0644a3c6430297ea990029af062075533ab0967ecb527c83cf20020fa701ecf2"
+        },
+        "nkf": {
+          "audio": "audio/car-1202-dt-clean/nkf.wav",
+          "spectrogram": "spectrograms/car-1202-dt-clean/nkf.png",
+          "metrics": {
+            "PESQ ↑": 1.7,
+            "ESTOI ↑": 0.669,
+            "tERLE (dB) ↑": 1.54,
+            "LSD (dB) ↓": 5.395
+          },
+          "sha256": "cd6bb87294ddadebe7066aa505943ac4301d1ed7c53b848cd4b6b94bfe657650"
+        },
+        "neural_mlms": {
+          "audio": "audio/car-1202-dt-clean/neural_mlms.wav",
+          "spectrogram": "spectrograms/car-1202-dt-clean/neural_mlms.png",
+          "metrics": {
+            "PESQ ↑": 2.525,
+            "ESTOI ↑": 0.795,
+            "tERLE (dB) ↑": 10.15,
+            "LSD (dB) ↓": 4.238
+          },
+          "sha256": "f03cb275cd74b60137a4607f5daed28c8855009b44b6f8319723807c0b3baf88"
+        },
+        "pocket": {
+          "audio": "audio/car-1202-dt-clean/pocket.wav",
+          "spectrogram": "spectrograms/car-1202-dt-clean/pocket.png",
+          "metrics": {
+            "PESQ ↑": 3.156,
+            "ESTOI ↑": 0.846,
+            "tERLE (dB) ↑": 17.922,
+            "LSD (dB) ↓": 3.23
+          },
+          "sha256": "bf1a4e485ee9b136641c0a7e9729878008f0298fb5daac65cc442d7b2be7133b"
+        },
+        "target": {
+          "audio": "audio/car-1202-dt-clean/target.wav",
+          "spectrogram": "spectrograms/car-1202-dt-clean/target.png",
+          "metrics": {},
+          "sha256": "326f54c8e90d6dc5091dad85ac79fc5b51eba851349a5061b863fe4e4ef0f712"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 12.38 dB.",
+      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise.",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
+        "Original sample ID": "weilai_test_00300"
+      }
+    },
+    {
+      "id": "car-0395-dt-noisy",
+      "title": "Example 31 — Double-talk · noisy",
+      "dataset": "Recorded vehicle echo",
+      "scenario": "DT · noisy",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "SER 0.0 dB. SNR 25.0 dB. Target includes background noise",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/car-0395-dt-noisy/input.wav",
+          "spectrogram": "spectrograms/car-0395-dt-noisy/input.png",
+          "metrics": {
+            "PESQ ↑": 1.411,
+            "ESTOI ↑": 0.682,
+            "tERLE (dB) ↑": 0,
+            "LSD (dB) ↓": 7.02
+          },
+          "sha256": "a0e734eb007f9d654477acf336d41495348a30f833dcb5760ba1c985046677d4"
+        },
+        "nlms": {
+          "audio": "audio/car-0395-dt-noisy/nlms.wav",
+          "spectrogram": "spectrograms/car-0395-dt-noisy/nlms.png",
+          "metrics": {
+            "PESQ ↑": 1.905,
+            "ESTOI ↑": 0.756,
+            "tERLE (dB) ↑": 3.931,
+            "LSD (dB) ↓": 5.309
+          },
+          "sha256": "240b7e5997a49e1f0944bbe1d83bec278b50ab7b6cb5c6816d9c4eacc53109bf"
+        },
+        "stft_kf": {
+          "audio": "audio/car-0395-dt-noisy/stft_kf.wav",
+          "spectrogram": "spectrograms/car-0395-dt-noisy/stft_kf.png",
+          "metrics": {
+            "PESQ ↑": 2.254,
+            "ESTOI ↑": 0.832,
+            "tERLE (dB) ↑": 12.101,
+            "LSD (dB) ↓": 4.775
+          },
+          "sha256": "6c10e0760bae0ca1abf8e982a848faf18aa618d56ce74379a91cb31f1bef62cb"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/car-0395-dt-noisy/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/car-0395-dt-noisy/hb_dnn_nlms.png",
+          "metrics": {
+            "PESQ ↑": 2.997,
+            "ESTOI ↑": 0.89,
+            "tERLE (dB) ↑": 17.087,
+            "LSD (dB) ↓": 3.846
+          },
+          "sha256": "d2b8b6527b9bc07cecc892e95f820b5c7c9b5d170535d99b6e77d03d8181ef9e"
+        },
+        "meta_af": {
+          "audio": "audio/car-0395-dt-noisy/meta_af.wav",
+          "spectrogram": "spectrograms/car-0395-dt-noisy/meta_af.png",
+          "metrics": {
+            "PESQ ↑": 1.636,
+            "ESTOI ↑": 0.768,
+            "tERLE (dB) ↑": 3.616,
+            "LSD (dB) ↓": 6.339
+          },
+          "sha256": "61a578abf5168560afc66f44cee8da4ce25186e4efd9102240b9e078060571fa"
+        },
+        "nkf": {
+          "audio": "audio/car-0395-dt-noisy/nkf.wav",
+          "spectrogram": "spectrograms/car-0395-dt-noisy/nkf.png",
+          "metrics": {
+            "PESQ ↑": 1.711,
+            "ESTOI ↑": 0.773,
+            "tERLE (dB) ↑": 2.99,
+            "LSD (dB) ↓": 5.202
+          },
+          "sha256": "6542027b400ccc4ad5e5ba6f69e153df8c9edaab1afa0d09e7514cc3d0732044"
+        },
+        "neural_mlms": {
+          "audio": "audio/car-0395-dt-noisy/neural_mlms.wav",
+          "spectrogram": "spectrograms/car-0395-dt-noisy/neural_mlms.png",
+          "metrics": {
+            "PESQ ↑": 2.794,
+            "ESTOI ↑": 0.875,
+            "tERLE (dB) ↑": 15.855,
+            "LSD (dB) ↓": 4.252
+          },
+          "sha256": "2653c2fdf7e93fdf3f86641da97792c6059e71c54522b6fb20ba8ed4d344dc74"
+        },
+        "pocket": {
+          "audio": "audio/car-0395-dt-noisy/pocket.wav",
+          "spectrogram": "spectrograms/car-0395-dt-noisy/pocket.png",
+          "metrics": {
+            "PESQ ↑": 3.405,
+            "ESTOI ↑": 0.914,
+            "tERLE (dB) ↑": 16.73,
+            "LSD (dB) ↓": 3.531
+          },
+          "sha256": "66a40837b8a98230e75732d230ef7dca6a5da31fd8ec3d870ac96cb6514c59e1"
+        },
+        "target": {
+          "audio": "audio/car-0395-dt-noisy/target.wav",
+          "spectrogram": "spectrograms/car-0395-dt-noisy/target.png",
+          "metrics": {},
+          "sha256": "b88abf26106069afe3f768ce3ebebc254ddd700fd2f0bb4982bee94a958d9969"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 11.65 dB.",
+      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise.",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
+        "Original sample ID": "weilai_test_00098"
+      }
+    },
+    {
+      "id": "car-0555-dt-noisy",
+      "title": "Example 32 — Double-talk · noisy",
+      "dataset": "Recorded vehicle echo",
+      "scenario": "DT · noisy",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "SER 10.0 dB. SNR 25.0 dB. Target includes background noise",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/car-0555-dt-noisy/input.wav",
+          "spectrogram": "spectrograms/car-0555-dt-noisy/input.png",
+          "metrics": {
+            "PESQ ↑": 1.699,
+            "ESTOI ↑": 0.834,
+            "tERLE (dB) ↑": 0,
+            "LSD (dB) ↓": 4.206
+          },
+          "sha256": "fcb4fae6efb07ffbadbb86750509cb18a69b6489d8c60028ea28282aa0aba0a1"
+        },
+        "nlms": {
+          "audio": "audio/car-0555-dt-noisy/nlms.wav",
+          "spectrogram": "spectrograms/car-0555-dt-noisy/nlms.png",
+          "metrics": {
+            "PESQ ↑": 1.697,
+            "ESTOI ↑": 0.821,
+            "tERLE (dB) ↑": -3.769,
+            "LSD (dB) ↓": 4.556
+          },
+          "sha256": "ebd69ffc76b965e21dfdb6fc08e39dff8b7000818a51fd50050307f8c8fdfbec"
+        },
+        "stft_kf": {
+          "audio": "audio/car-0555-dt-noisy/stft_kf.wav",
+          "spectrogram": "spectrograms/car-0555-dt-noisy/stft_kf.png",
+          "metrics": {
+            "PESQ ↑": 2.519,
+            "ESTOI ↑": 0.909,
+            "tERLE (dB) ↑": 4.824,
+            "LSD (dB) ↓": 3.172
+          },
+          "sha256": "5a2045f45eb3aa12e13d9f1b89148bb02b5314fb0572b3c645a7f25bcbe83b7d"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/car-0555-dt-noisy/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/car-0555-dt-noisy/hb_dnn_nlms.png",
+          "metrics": {
+            "PESQ ↑": 3.005,
+            "ESTOI ↑": 0.941,
+            "tERLE (dB) ↑": 6.519,
+            "LSD (dB) ↓": 2.228
+          },
+          "sha256": "69f9144741cb8d6aaed73f3e9fb1be3cbbe791a0582a894a9a1a1b59f0e890c6"
+        },
+        "meta_af": {
+          "audio": "audio/car-0555-dt-noisy/meta_af.wav",
+          "spectrogram": "spectrograms/car-0555-dt-noisy/meta_af.png",
+          "metrics": {
+            "PESQ ↑": 1.819,
+            "ESTOI ↑": 0.848,
+            "tERLE (dB) ↑": 0.791,
+            "LSD (dB) ↓": 3.981
+          },
+          "sha256": "65227c8e6f9e7765f9c64388f5816baa466d8df0bd43d2bc30f578d9b25d9011"
+        },
+        "nkf": {
+          "audio": "audio/car-0555-dt-noisy/nkf.wav",
+          "spectrogram": "spectrograms/car-0555-dt-noisy/nkf.png",
+          "metrics": {
+            "PESQ ↑": 1.915,
+            "ESTOI ↑": 0.862,
+            "tERLE (dB) ↑": 1.002,
+            "LSD (dB) ↓": 3.333
+          },
+          "sha256": "33ba88db8e028c5c74dbb5439be5a283c85509cc8c63d162e51eb52f98af90aa"
+        },
+        "neural_mlms": {
+          "audio": "audio/car-0555-dt-noisy/neural_mlms.wav",
+          "spectrogram": "spectrograms/car-0555-dt-noisy/neural_mlms.png",
+          "metrics": {
+            "PESQ ↑": 3.028,
+            "ESTOI ↑": 0.946,
+            "tERLE (dB) ↑": 5.152,
+            "LSD (dB) ↓": 2.45
+          },
+          "sha256": "aa48fcd6b2f1d8610cc353aa5afbefade08708002113131cd5f0ad0472dc629a"
+        },
+        "pocket": {
+          "audio": "audio/car-0555-dt-noisy/pocket.wav",
+          "spectrogram": "spectrograms/car-0555-dt-noisy/pocket.png",
+          "metrics": {
+            "PESQ ↑": 3.646,
+            "ESTOI ↑": 0.966,
+            "tERLE (dB) ↑": 8.774,
+            "LSD (dB) ↓": 2.123
+          },
+          "sha256": "8e781259286a34e6a8c184993afd2691951ee9b72b0a4a0cd92805bd20547349"
+        },
+        "target": {
+          "audio": "audio/car-0555-dt-noisy/target.wav",
+          "spectrogram": "spectrograms/car-0555-dt-noisy/target.png",
+          "metrics": {},
+          "sha256": "45ed96e2fb52dfaabb7e5dbc2d494e732aca1377294473c26fb2eb8582e2b317"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 4.89 dB.",
+      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise.",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
+        "Original sample ID": "weilai_test_00138"
+      }
+    },
+    {
+      "id": "car-0635-dt-noisy",
+      "title": "Example 33 — Double-talk · noisy",
+      "dataset": "Recorded vehicle echo",
+      "scenario": "DT · noisy",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "SER 0.0 dB. SNR 15.0 dB. Target includes background noise",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/car-0635-dt-noisy/input.wav",
+          "spectrogram": "spectrograms/car-0635-dt-noisy/input.png",
+          "metrics": {
+            "PESQ ↑": 2.127,
+            "ESTOI ↑": 0.839,
+            "tERLE (dB) ↑": 0,
+            "LSD (dB) ↓": 3.513
+          },
+          "sha256": "75234a3b1c32e8dfa2782d5766aed1838f297cebec0fc7e29d78b413adfa3fac"
+        },
+        "nlms": {
+          "audio": "audio/car-0635-dt-noisy/nlms.wav",
+          "spectrogram": "spectrograms/car-0635-dt-noisy/nlms.png",
+          "metrics": {
+            "PESQ ↑": 2.758,
+            "ESTOI ↑": 0.87,
+            "tERLE (dB) ↑": 4.927,
+            "LSD (dB) ↓": 3.167
+          },
+          "sha256": "46e4bbf6107f3164d416aba65524e861615e8b28211a4f94f56cb77d5114c5c0"
+        },
+        "stft_kf": {
+          "audio": "audio/car-0635-dt-noisy/stft_kf.wav",
+          "spectrogram": "spectrograms/car-0635-dt-noisy/stft_kf.png",
+          "metrics": {
+            "PESQ ↑": 3.158,
+            "ESTOI ↑": 0.911,
+            "tERLE (dB) ↑": 12.408,
+            "LSD (dB) ↓": 2.838
+          },
+          "sha256": "7efc347b1abba8e1ad94baae1b4a41e6dd82eb43ec88ce87226e99a10471b84c"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/car-0635-dt-noisy/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/car-0635-dt-noisy/hb_dnn_nlms.png",
+          "metrics": {
+            "PESQ ↑": 3.076,
+            "ESTOI ↑": 0.901,
+            "tERLE (dB) ↑": 6.227,
+            "LSD (dB) ↓": 2.501
+          },
+          "sha256": "4e75dbfe825074b14a88253ce37577ba80e2fd1f7854161c29964186fdb24668"
+        },
+        "meta_af": {
+          "audio": "audio/car-0635-dt-noisy/meta_af.wav",
+          "spectrogram": "spectrograms/car-0635-dt-noisy/meta_af.png",
+          "metrics": {
+            "PESQ ↑": 2.226,
+            "ESTOI ↑": 0.851,
+            "tERLE (dB) ↑": 1.153,
+            "LSD (dB) ↓": 3.56
+          },
+          "sha256": "c20c41aff9e9a22e8fc9856fbed8dde6b0c1ae51b1157e70379275ac0d9d1970"
+        },
+        "nkf": {
+          "audio": "audio/car-0635-dt-noisy/nkf.wav",
+          "spectrogram": "spectrograms/car-0635-dt-noisy/nkf.png",
+          "metrics": {
+            "PESQ ↑": 2.171,
+            "ESTOI ↑": 0.849,
+            "tERLE (dB) ↑": 0.873,
+            "LSD (dB) ↓": 3.11
+          },
+          "sha256": "05fcf3d03c528056c365963afb58324ce1a492129673ac9f599270aa9d4b3b96"
+        },
+        "neural_mlms": {
+          "audio": "audio/car-0635-dt-noisy/neural_mlms.wav",
+          "spectrogram": "spectrograms/car-0635-dt-noisy/neural_mlms.png",
+          "metrics": {
+            "PESQ ↑": 2.944,
+            "ESTOI ↑": 0.892,
+            "tERLE (dB) ↑": 5.025,
+            "LSD (dB) ↓": 2.847
+          },
+          "sha256": "b805fbe6c98fd90d5e12e9b85687d7a0e7a754862017ce402e4a25002a16661c"
+        },
+        "pocket": {
+          "audio": "audio/car-0635-dt-noisy/pocket.wav",
+          "spectrogram": "spectrograms/car-0635-dt-noisy/pocket.png",
+          "metrics": {
+            "PESQ ↑": 3.452,
+            "ESTOI ↑": 0.933,
+            "tERLE (dB) ↑": 12.704,
+            "LSD (dB) ↓": 2.736
+          },
+          "sha256": "9f2d2150d56b064c54ab6244b5f6a11979dd3ac04e4e82cc63147568b2fa5162"
+        },
+        "target": {
+          "audio": "audio/car-0635-dt-noisy/target.wav",
+          "spectrogram": "spectrograms/car-0635-dt-noisy/target.png",
+          "metrics": {},
+          "sha256": "a9dd1b409c614f43be5244656ad70e97e4af76e01981c474ba21fc75f07f49c4"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 13.04 dB.",
+      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise.",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
+        "Original sample ID": "weilai_test_00158"
+      }
+    },
+    {
+      "id": "car-0628-fs-clean",
+      "title": "Example 34 — Far-end single-talk · clean",
+      "dataset": "Recorded vehicle echo",
+      "scenario": "FS · clean",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/car-0628-fs-clean/input.wav",
+          "spectrogram": "spectrograms/car-0628-fs-clean/input.png",
+          "metrics": {
+            "ERLE (dB) ↑": 0
+          },
+          "sha256": "9764c105cad62a3d6aefda50c47bc517397e26bfec887f6cd06418008726e57c"
+        },
+        "nlms": {
+          "audio": "audio/car-0628-fs-clean/nlms.wav",
+          "spectrogram": "spectrograms/car-0628-fs-clean/nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 14.227
+          },
+          "sha256": "57dc7f4569ddd1a40b964af822967b1f04498e545f0b2bf12468d5bf1d422b43"
+        },
+        "stft_kf": {
+          "audio": "audio/car-0628-fs-clean/stft_kf.wav",
+          "spectrogram": "spectrograms/car-0628-fs-clean/stft_kf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 22.444
+          },
+          "sha256": "a4cfcb21a8d16ae0cc324ace43bf7ef00945723c5c7a89ce4ab184027b529ac7"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/car-0628-fs-clean/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/car-0628-fs-clean/hb_dnn_nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 23.844
+          },
+          "sha256": "c6828bc1070ffc05bd92badedfca591500691389cd651f4b791b510d08e7b1f0"
+        },
+        "meta_af": {
+          "audio": "audio/car-0628-fs-clean/meta_af.wav",
+          "spectrogram": "spectrograms/car-0628-fs-clean/meta_af.png",
+          "metrics": {
+            "ERLE (dB) ↑": 5.303
+          },
+          "sha256": "227e976e80db9770a8cfdc31532a42d8f664e97adb331cd242ac26ee619eb86d"
+        },
+        "nkf": {
+          "audio": "audio/car-0628-fs-clean/nkf.wav",
+          "spectrogram": "spectrograms/car-0628-fs-clean/nkf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 5.729
+          },
+          "sha256": "22c1df7ce7d89018e5c4f605883823a5b08c845d18faec28ed847e4c04085d24"
+        },
+        "neural_mlms": {
+          "audio": "audio/car-0628-fs-clean/neural_mlms.wav",
+          "spectrogram": "spectrograms/car-0628-fs-clean/neural_mlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 26.108
+          },
+          "sha256": "44f2345b357f2ad49431cc46d2cdc1f8d1a0f6cbb735bb872e0080ca2c114082"
+        },
+        "pocket": {
+          "audio": "audio/car-0628-fs-clean/pocket.wav",
+          "spectrogram": "spectrograms/car-0628-fs-clean/pocket.png",
+          "metrics": {
+            "ERLE (dB) ↑": 37.851
+          },
+          "sha256": "da63f9dec453a201e0986b5b378d32d9c58077e96ba07e7f637f64aff941abc9"
+        },
+        "target": {
+          "audio": "audio/car-0628-fs-clean/target.wav",
+          "spectrogram": "spectrograms/car-0628-fs-clean/target.png",
+          "metrics": {},
+          "sha256": "d0343ef67143fd0a68053af5a93b69d2dee249fbbf6afe6f92f7b1524a9227e7"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 13.26 dB.",
+      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise.",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
+        "Original sample ID": "weilai_test_00157"
+      }
+    },
+    {
+      "id": "car-0728-fs-clean",
+      "title": "Example 35 — Far-end single-talk · clean",
+      "dataset": "Recorded vehicle echo",
+      "scenario": "FS · clean",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/car-0728-fs-clean/input.wav",
+          "spectrogram": "spectrograms/car-0728-fs-clean/input.png",
+          "metrics": {
+            "ERLE (dB) ↑": 0
+          },
+          "sha256": "da161b67c519c1330233d4f48ef9d22d73e9b0dc86cd563e4edea73793ea760d"
+        },
+        "nlms": {
+          "audio": "audio/car-0728-fs-clean/nlms.wav",
+          "spectrogram": "spectrograms/car-0728-fs-clean/nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 14.83
+          },
+          "sha256": "1b4d586420181704495a2e551b481781ee77a07bd6ddcccc143db0d2fb75f465"
+        },
+        "stft_kf": {
+          "audio": "audio/car-0728-fs-clean/stft_kf.wav",
+          "spectrogram": "spectrograms/car-0728-fs-clean/stft_kf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 26.139
+          },
+          "sha256": "13f4349ad21142dd43dc900d10e2258428332525ecebed20346370d66f4f306e"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/car-0728-fs-clean/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/car-0728-fs-clean/hb_dnn_nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 23.969
+          },
+          "sha256": "9f6841041ef2fb55ea320cb01d715eff641c6e7765bf0ecca4c25a41c59f07ea"
+        },
+        "meta_af": {
+          "audio": "audio/car-0728-fs-clean/meta_af.wav",
+          "spectrogram": "spectrograms/car-0728-fs-clean/meta_af.png",
+          "metrics": {
+            "ERLE (dB) ↑": 6.87
+          },
+          "sha256": "79b073d0049c04e7f0dda2230588e68f8fb81d338a7c5cbd49bee23edb2d2f12"
+        },
+        "nkf": {
+          "audio": "audio/car-0728-fs-clean/nkf.wav",
+          "spectrogram": "spectrograms/car-0728-fs-clean/nkf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 7.288
+          },
+          "sha256": "156d1b19ab54b7645d52f44dc5dab408381b60b1934ffe59ed4447d097cdb283"
+        },
+        "neural_mlms": {
+          "audio": "audio/car-0728-fs-clean/neural_mlms.wav",
+          "spectrogram": "spectrograms/car-0728-fs-clean/neural_mlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 26.125
+          },
+          "sha256": "cec1e4e236dd7de2eb706e760fb8b4d805e978096a14e3ccb50808347ddd3073"
+        },
+        "pocket": {
+          "audio": "audio/car-0728-fs-clean/pocket.wav",
+          "spectrogram": "spectrograms/car-0728-fs-clean/pocket.png",
+          "metrics": {
+            "ERLE (dB) ↑": 39.301
+          },
+          "sha256": "4e8542b8d55b8e88b1265d38a5ae13f7481aefa06cfacc819a886bf618e83f04"
+        },
+        "target": {
+          "audio": "audio/car-0728-fs-clean/target.wav",
+          "spectrogram": "spectrograms/car-0728-fs-clean/target.png",
+          "metrics": {},
+          "sha256": "d0343ef67143fd0a68053af5a93b69d2dee249fbbf6afe6f92f7b1524a9227e7"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 11.04 dB.",
+      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise.",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
+        "Original sample ID": "weilai_test_00182"
+      }
+    },
+    {
+      "id": "car-1308-fs-clean",
+      "title": "Example 36 — Far-end single-talk · clean",
+      "dataset": "Recorded vehicle echo",
+      "scenario": "FS · clean",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/car-1308-fs-clean/input.wav",
+          "spectrogram": "spectrograms/car-1308-fs-clean/input.png",
+          "metrics": {
+            "ERLE (dB) ↑": 0
+          },
+          "sha256": "3eb459bfa0b5a9aac6b4b8d5b74e313dd0182b6d340a018aeea86635c879498b"
+        },
+        "nlms": {
+          "audio": "audio/car-1308-fs-clean/nlms.wav",
+          "spectrogram": "spectrograms/car-1308-fs-clean/nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 12.393
+          },
+          "sha256": "81659cf902e677b0d0c100f1cd0f4af5d269edd9d25c4da1f9430c4351610427"
+        },
+        "stft_kf": {
+          "audio": "audio/car-1308-fs-clean/stft_kf.wav",
+          "spectrogram": "spectrograms/car-1308-fs-clean/stft_kf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 25.887
+          },
+          "sha256": "c3353a9058ef2802aa4cc66d26b037b0398cdd5137e39124e1a31f69f8e24083"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/car-1308-fs-clean/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/car-1308-fs-clean/hb_dnn_nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 21.183
+          },
+          "sha256": "a073cf2b062bbcddd4cb9d083ee976764c5d44f238c3778fcafb6b854adc1fbc"
+        },
+        "meta_af": {
+          "audio": "audio/car-1308-fs-clean/meta_af.wav",
+          "spectrogram": "spectrograms/car-1308-fs-clean/meta_af.png",
+          "metrics": {
+            "ERLE (dB) ↑": 6.064
+          },
+          "sha256": "11aa8ca1423e331e88d2d0900fc1e3006ad621a03f53665d7f43a6092b6ebb84"
+        },
+        "nkf": {
+          "audio": "audio/car-1308-fs-clean/nkf.wav",
+          "spectrogram": "spectrograms/car-1308-fs-clean/nkf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 4.52
+          },
+          "sha256": "5036d5f34cebd66dd881119ac6dc20fa14b9fbaada4c506d7e9be7560fbef584"
+        },
+        "neural_mlms": {
+          "audio": "audio/car-1308-fs-clean/neural_mlms.wav",
+          "spectrogram": "spectrograms/car-1308-fs-clean/neural_mlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 21.188
+          },
+          "sha256": "43765126235b36714417b51a5f119caab2d793a87a44b09c6dfd9948de7dc8a6"
+        },
+        "pocket": {
+          "audio": "audio/car-1308-fs-clean/pocket.wav",
+          "spectrogram": "spectrograms/car-1308-fs-clean/pocket.png",
+          "metrics": {
+            "ERLE (dB) ↑": 38.356
+          },
+          "sha256": "621ed26902c43f64521c8e4d6562503e4aa9f5ae074a47a29bbf248ae7e40f3a"
+        },
+        "target": {
+          "audio": "audio/car-1308-fs-clean/target.wav",
+          "spectrogram": "spectrograms/car-1308-fs-clean/target.png",
+          "metrics": {},
+          "sha256": "d0343ef67143fd0a68053af5a93b69d2dee249fbbf6afe6f92f7b1524a9227e7"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 13.19 dB.",
+      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise.",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
+        "Original sample ID": "weilai_test_00327"
+      }
+    },
+    {
+      "id": "car-0753-fs-noisy",
+      "title": "Example 37 — Far-end single-talk · noisy",
+      "dataset": "Recorded vehicle echo",
+      "scenario": "FS · noisy",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "Target includes background noise",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/car-0753-fs-noisy/input.wav",
+          "spectrogram": "spectrograms/car-0753-fs-noisy/input.png",
+          "metrics": {
+            "ERLE (dB) ↑": 0
+          },
+          "sha256": "2f0fc9cab6eb25e5436250bdbd3fdd405e456f9ca06182f04a192086481223ab"
+        },
+        "nlms": {
+          "audio": "audio/car-0753-fs-noisy/nlms.wav",
+          "spectrogram": "spectrograms/car-0753-fs-noisy/nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 14.038
+          },
+          "sha256": "3b4850f4acc8a70e21eee776e8955e10d1447360b4691fae20f72be8383248f9"
+        },
+        "stft_kf": {
+          "audio": "audio/car-0753-fs-noisy/stft_kf.wav",
+          "spectrogram": "spectrograms/car-0753-fs-noisy/stft_kf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 21.976
+          },
+          "sha256": "05ee5fc718433ff0056711f9f30497cc2b6b9a1fc3b68340e6e21c351181432b"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/car-0753-fs-noisy/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/car-0753-fs-noisy/hb_dnn_nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 21.327
+          },
+          "sha256": "cc2a2813fdde1a6abf26e91a495061de7267521d44ad57638b976535814c6941"
+        },
+        "meta_af": {
+          "audio": "audio/car-0753-fs-noisy/meta_af.wav",
+          "spectrogram": "spectrograms/car-0753-fs-noisy/meta_af.png",
+          "metrics": {
+            "ERLE (dB) ↑": 6.04
+          },
+          "sha256": "adfce30eed2d17ae78d131a4c333857a9747ba2ddf1644dac23d4dd27caee699"
+        },
+        "nkf": {
+          "audio": "audio/car-0753-fs-noisy/nkf.wav",
+          "spectrogram": "spectrograms/car-0753-fs-noisy/nkf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 5.872
+          },
+          "sha256": "71d3e6934cc453fe2732b4a6d2755421f0a7aa9d28db8c17b3441de6730b2387"
+        },
+        "neural_mlms": {
+          "audio": "audio/car-0753-fs-noisy/neural_mlms.wav",
+          "spectrogram": "spectrograms/car-0753-fs-noisy/neural_mlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 24.642
+          },
+          "sha256": "b127b472f9936a554b46be138af63f976cdd7c0d30034a6053c1225e2d0ca142"
+        },
+        "pocket": {
+          "audio": "audio/car-0753-fs-noisy/pocket.wav",
+          "spectrogram": "spectrograms/car-0753-fs-noisy/pocket.png",
+          "metrics": {
+            "ERLE (dB) ↑": 34.016
+          },
+          "sha256": "6f3e25ebd0e8cc4f44d5ef30fc9b0df8d871cb65dd1583373950551e94905315"
+        },
+        "target": {
+          "audio": "audio/car-0753-fs-noisy/target.wav",
+          "spectrogram": "spectrograms/car-0753-fs-noisy/target.png",
+          "metrics": {},
+          "sha256": "a37e3af61ffa191dfa6f956218491ff20dd12364e721e731c5ee2c48fa687a43"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 15.98 dB.",
+      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise.",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
+        "Original sample ID": "weilai_test_00188",
+        "Echo-to-noise ratio": "30.0 dB"
+      }
+    },
+    {
+      "id": "car-0781-fs-noisy",
+      "title": "Example 38 — Far-end single-talk · noisy",
+      "dataset": "Recorded vehicle echo",
+      "scenario": "FS · noisy",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "Target includes background noise",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/car-0781-fs-noisy/input.wav",
+          "spectrogram": "spectrograms/car-0781-fs-noisy/input.png",
+          "metrics": {
+            "ERLE (dB) ↑": 0
+          },
+          "sha256": "b0c195c4abc40d50cd40ef368804b31c15efe4a9bc78db2669dd4a2ddbb3f562"
+        },
+        "nlms": {
+          "audio": "audio/car-0781-fs-noisy/nlms.wav",
+          "spectrogram": "spectrograms/car-0781-fs-noisy/nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 12.796
+          },
+          "sha256": "ae947456739ec491dd4c72973b9c83962c417b1275acb9d8cf3ef1bfbb0953f4"
+        },
+        "stft_kf": {
+          "audio": "audio/car-0781-fs-noisy/stft_kf.wav",
+          "spectrogram": "spectrograms/car-0781-fs-noisy/stft_kf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 14.943
+          },
+          "sha256": "22497b968d0982cf8ff17acce9cbcb64c6bb49eb916ac017b9409eaaab7f2770"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/car-0781-fs-noisy/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/car-0781-fs-noisy/hb_dnn_nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 17.226
+          },
+          "sha256": "8b0f34522452a42e86537b7b1990a18f1869c896b835a0853fcb9b3ceed55b3d"
+        },
+        "meta_af": {
+          "audio": "audio/car-0781-fs-noisy/meta_af.wav",
+          "spectrogram": "spectrograms/car-0781-fs-noisy/meta_af.png",
+          "metrics": {
+            "ERLE (dB) ↑": 4.493
+          },
+          "sha256": "dc26710af583ddd7615ac4e1e610b8e2f2f0849f27bc8812115aefc6f3af42d1"
+        },
+        "nkf": {
+          "audio": "audio/car-0781-fs-noisy/nkf.wav",
+          "spectrogram": "spectrograms/car-0781-fs-noisy/nkf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 2.29
+          },
+          "sha256": "a24963f7eca85f15028114dd98fd9326ef8a9f5ce9b956503c6e808f7d151244"
+        },
+        "neural_mlms": {
+          "audio": "audio/car-0781-fs-noisy/neural_mlms.wav",
+          "spectrogram": "spectrograms/car-0781-fs-noisy/neural_mlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 11.254
+          },
+          "sha256": "1f21d021a4148f357a73dc6c751b709377fb6a4c6994069d837c0fff918c9937"
+        },
+        "pocket": {
+          "audio": "audio/car-0781-fs-noisy/pocket.wav",
+          "spectrogram": "spectrograms/car-0781-fs-noisy/pocket.png",
+          "metrics": {
+            "ERLE (dB) ↑": 28.258
+          },
+          "sha256": "42f5329e2f24e3b5b0268ebbacccf490105fcd6904df3f4b947fa87d15450d13"
+        },
+        "target": {
+          "audio": "audio/car-0781-fs-noisy/target.wav",
+          "spectrogram": "spectrograms/car-0781-fs-noisy/target.png",
+          "metrics": {},
+          "sha256": "6a0ea80a80da78e56bb85ba7bb6928f3cee1f1d8cefb76ac661d2285b83f17ed"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 14.84 dB.",
+      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise.",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
+        "Original sample ID": "weilai_test_00195",
+        "Echo-to-noise ratio": "30.0 dB"
+      }
+    },
+    {
+      "id": "car-1005-fs-noisy",
+      "title": "Example 39 — Far-end single-talk · noisy",
+      "dataset": "Recorded vehicle echo",
+      "scenario": "FS · noisy",
+      "duration": 9.984,
+      "sample_rate": 16000,
+      "featured": false,
+      "note": "Target includes background noise",
+      "events": [],
+      "tracks": {
+        "input": {
+          "audio": "audio/car-1005-fs-noisy/input.wav",
+          "spectrogram": "spectrograms/car-1005-fs-noisy/input.png",
+          "metrics": {
+            "ERLE (dB) ↑": 0
+          },
+          "sha256": "281881c42d806d6639c025b7ab85815cec43b488eda4042431c4a13aa3d7098c"
+        },
+        "nlms": {
+          "audio": "audio/car-1005-fs-noisy/nlms.wav",
+          "spectrogram": "spectrograms/car-1005-fs-noisy/nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 13.622
+          },
+          "sha256": "fb72dcada1d8c66a34ffdbe22274c00ed0ef69c0cf4c46fc7543c3019b26e957"
+        },
+        "stft_kf": {
+          "audio": "audio/car-1005-fs-noisy/stft_kf.wav",
+          "spectrogram": "spectrograms/car-1005-fs-noisy/stft_kf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 14.143
+          },
+          "sha256": "ce1e61f7ad86e3aae60eb2e9060acbd788053182de99338dc202c09cb13a38bd"
+        },
+        "hb_dnn_nlms": {
+          "audio": "audio/car-1005-fs-noisy/hb_dnn_nlms.wav",
+          "spectrogram": "spectrograms/car-1005-fs-noisy/hb_dnn_nlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 18.881
+          },
+          "sha256": "c32962713951e4c0855dbce98c87c6df0a1a4d7108b005760f7486e4aaacb8b3"
+        },
+        "meta_af": {
+          "audio": "audio/car-1005-fs-noisy/meta_af.wav",
+          "spectrogram": "spectrograms/car-1005-fs-noisy/meta_af.png",
+          "metrics": {
+            "ERLE (dB) ↑": 5.857
+          },
+          "sha256": "62d2165e68bc579c9ccdf8369488447fd414dcb581d159121ccca6604dc63c4f"
+        },
+        "nkf": {
+          "audio": "audio/car-1005-fs-noisy/nkf.wav",
+          "spectrogram": "spectrograms/car-1005-fs-noisy/nkf.png",
+          "metrics": {
+            "ERLE (dB) ↑": 3.048
+          },
+          "sha256": "e71ba12d6d7d5c0379871b6ee2d7f638e44e2e6c6969dc308d1e6b02f255c419"
+        },
+        "neural_mlms": {
+          "audio": "audio/car-1005-fs-noisy/neural_mlms.wav",
+          "spectrogram": "spectrograms/car-1005-fs-noisy/neural_mlms.png",
+          "metrics": {
+            "ERLE (dB) ↑": 15.647
+          },
+          "sha256": "0ab144e3e37d1fb14f4e9a2c334ef04b15808b014d7ab1e08033cad115536d25"
+        },
+        "pocket": {
+          "audio": "audio/car-1005-fs-noisy/pocket.wav",
+          "spectrogram": "spectrograms/car-1005-fs-noisy/pocket.png",
+          "metrics": {
+            "ERLE (dB) ↑": 26.337
+          },
+          "sha256": "64debc14f22d2eb6379be0f62767ab4f5b661afb9ce60e1d0d3ae247c94c1ae6"
+        },
+        "target": {
+          "audio": "audio/car-1005-fs-noisy/target.wav",
+          "spectrogram": "spectrograms/car-1005-fs-noisy/target.png",
+          "metrics": {},
+          "sha256": "6ee2ad6f5f8dcf4f08f9ddad54e5a2423abb57436f11f62d102dac24d711593e"
+        }
+      },
+      "spectrogram_max_hz": 8000,
+      "processing": "Shared excerpt [0.000, 9.984) s; common playback gain 16.75 dB.",
+      "source": "In-vehicle recorded reference–echo pairs, mixed with DNS speech and DEMAND noise.",
+      "provenance": {
+        "Metric interval": "Reference-based metrics evaluated on the 9.984 s floating-point interval, before the shared playback gain.",
+        "Original sample ID": "weilai_test_00251",
+        "Echo-to-noise ratio": "20.0 dB"
+      }
+    }
+  ]
+}
