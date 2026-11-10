@@ -4,6 +4,8 @@ Yang Xu, Ze Li, Ronghui Hu, Shiruo Sun, Yuxiang Hu, Kai Chen, and Jing Lu
 
 Supplementary audio examples with synchronized method switching, spectrograms, and per-example metrics.
 
+**[Listen to the audio examples](https://yangxu212.github.io/POCKET-demo/)**
+
 ## Audio collection
 
 | Data domain | Examples |
@@ -18,7 +20,7 @@ Each example includes the microphone input, **NLMS, STFT-KF, HB-DNN-NLMS, Meta-A
 
 Audio is mono, 16 kHz, 24-bit PCM. Methods share a common time interval and playback gain within each example. Spectrograms use a fixed −90 to 0 dBFS scale. Source identifiers, processing details, and metrics are stored in [data/manifest.json](data/manifest.json).
 
-POCKET uses the paper checkpoints with nonnegative real posterior projection (P-ReLU), FIRST1, and Cap1.5. Model source code and checkpoints are not included in this repository.
+POCKET uses the paper checkpoints with `ReLU(Re(P))`, `FIRST1`, and `Cap1.5`. Model source code and checkpoints are not included in this repository.
 
 ## Local use
 
