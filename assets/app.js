@@ -273,7 +273,7 @@
     drawPosition();
   }
   function renderSource() {
-    $('sample-source').textContent = sample.source || sample.dataset;
+    $('sample-provenance').textContent = sample.source || sample.dataset;
   }
   function selectSample(id, updateHash = true) {
     const next = samples.find((item) => item.id === id);
